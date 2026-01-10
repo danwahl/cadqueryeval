@@ -2,3 +2,4 @@ services:
   default:
     build: .
     init: true
+    command: sleep infinity

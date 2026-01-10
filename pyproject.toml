@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "inspect-ai>=0.3.158",
+    "openai>=2.15.0",
     "pyyaml>=6.0",
 ]
 
@@ -46,3 +47,6 @@ disallow_untyped_defs = true
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]
+markers = [
+    "docker: tests that require docker to run",
+]
