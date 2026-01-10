@@ -1,5 +1,4 @@
 import trimesh
-import numpy as np
 
 # Create a 10x10x10 box centered at the origin
 # Trimesh box is centered by default

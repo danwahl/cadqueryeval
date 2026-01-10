@@ -1,7 +1,5 @@
 """Tests for dataset loading."""
 
-import pytest
-
 from cadqueryeval.dataset import (
     get_data_path,
     get_dataset,
