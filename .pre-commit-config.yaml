@@ -9,17 +9,22 @@ repos:
       - id: check-yaml
       - id: check-added-large-files
 
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.1.11
-    hooks:
-      # Run the linter
-      - id: ruff
-        args: [--fix, --exit-non-zero-on-fix]
-      # Run the formatter
-      - id: ruff-format
-
   - repo: local
     hooks:
+      - id: ruff
+        name: ruff check
+        entry: uv run ruff check --fix --exit-non-zero-on-fix
+        language: system
+        types: [python]
+        require_serial: true
+
+      - id: ruff-format
+        name: ruff format
+        entry: uv run ruff format
+        language: system
+        types: [python]
+        require_serial: true
+
       - id: mypy
         name: mypy
         entry: uv run mypy src/
