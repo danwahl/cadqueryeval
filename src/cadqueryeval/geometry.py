@@ -7,30 +7,39 @@ import copy
 import logging
 from dataclasses import dataclass
 from pathlib import Path
+from typing import TYPE_CHECKING, Any
 
 import numpy as np
 
+if TYPE_CHECKING:
+    import open3d
+    import trimesh
+else:
+    open3d = Any
+    trimesh = Any
+
+
 # Defer imports of optional heavy dependencies
-open3d = None
-trimesh = None
+_open3d: Any = None
+_trimesh: Any = None
 
 
 def _ensure_open3d() -> None:
     """Lazily import open3d."""
-    global open3d
-    if open3d is None:
+    global _open3d
+    if _open3d is None:
         import open3d as o3d
 
-        open3d = o3d
+        _open3d = o3d
 
 
 def _ensure_trimesh() -> None:
     """Lazily import trimesh."""
-    global trimesh
-    if trimesh is None:
+    global _trimesh
+    if _trimesh is None:
         import trimesh as tm
 
-        trimesh = tm
+        _trimesh = tm
 
 
 logger = logging.getLogger(__name__)
@@ -100,7 +109,7 @@ def check_watertight(stl_path: str | Path) -> tuple[bool, str | None]:
     if not path.exists():
         return False, f"File not found: {path}"
 
-    mesh = open3d.io.read_triangle_mesh(str(path))
+    mesh = _open3d.io.read_triangle_mesh(str(path))
     if not mesh.has_triangles():
         return False, "Mesh has no triangles"
 
@@ -126,7 +135,7 @@ def check_single_component(
     if not path.exists():
         return False, f"File not found: {path}"
 
-    mesh = open3d.io.read_triangle_mesh(str(path))
+    mesh = _open3d.io.read_triangle_mesh(str(path))
     if not mesh.has_triangles():
         return False, "Mesh has no triangles"
 
@@ -165,8 +174,8 @@ def check_volume(
     if not ref_path.exists():
         return False, None, None, f"Reference file not found: {ref_path}"
 
-    gen_mesh = trimesh.load(str(gen_path), force="mesh")
-    ref_mesh = trimesh.load(str(ref_path), force="mesh")
+    gen_mesh = _trimesh.load(str(gen_path), force="mesh")
+    ref_mesh = _trimesh.load(str(ref_path), force="mesh")
 
     gen_vol = gen_mesh.volume
     ref_vol = ref_mesh.volume
@@ -202,12 +211,12 @@ def _preprocess_for_registration(
         return None, None
 
     pcd_down.estimate_normals(
-        open3d.geometry.KDTreeSearchParamHybrid(radius=voxel_size * 2.5, max_nn=35)
+        _open3d.geometry.KDTreeSearchParamHybrid(radius=voxel_size * 2.5, max_nn=35)
     )
 
-    fpfh = open3d.pipelines.registration.compute_fpfh_feature(
+    fpfh = _open3d.pipelines.registration.compute_fpfh_feature(
         pcd_down,
-        open3d.geometry.KDTreeSearchParamHybrid(radius=voxel_size * 5, max_nn=100),
+        _open3d.geometry.KDTreeSearchParamHybrid(radius=voxel_size * 5, max_nn=100),
     )
 
     if fpfh is None or fpfh.data.shape[1] == 0:
@@ -249,8 +258,8 @@ def check_similarity(
         return None, None, None, None, None, f"Reference file not found: {ref_path}"
 
     # Load meshes
-    gen_mesh = open3d.io.read_triangle_mesh(str(gen_path))
-    ref_mesh = open3d.io.read_triangle_mesh(str(ref_path))
+    gen_mesh = _open3d.io.read_triangle_mesh(str(gen_path))
+    ref_mesh = _open3d.io.read_triangle_mesh(str(ref_path))
 
     if not gen_mesh.has_triangles():
         return None, None, None, None, None, "Generated mesh has no triangles"
@@ -280,7 +289,7 @@ def check_similarity(
         return None, None, None, None, None, "Preprocessing for registration failed"
 
     distance_thresh = voxel_size * 1.5
-    reg = open3d.pipelines.registration
+    reg = _open3d.pipelines.registration
     ransac_result = reg.registration_ransac_based_on_feature_matching(
         source=gen_down,
         target=ref_down,
@@ -331,8 +340,8 @@ def check_similarity(
     hausdorff_99p = float(np.percentile(all_distances, 99))
 
     # Bounding box check using aligned mesh
-    gen_tm = trimesh.load(str(gen_path), force="mesh")
-    ref_tm = trimesh.load(str(ref_path), force="mesh")
+    gen_tm = _trimesh.load(str(gen_path), force="mesh")
+    ref_tm = _trimesh.load(str(ref_path), force="mesh")
 
     gen_tm.apply_transform(final_transform)
     gen_dims = sorted(gen_tm.bounding_box.extents)
@@ -373,24 +382,26 @@ def perform_geometry_checks(
     ref_path = Path(reference_path)
 
     if not gen_path.exists():
-        result.errors.append(f"Generated file not found: {gen_path}")
+        if result.errors is not None:
+            result.errors.append(f"Generated file not found: {gen_path}")
         return result
 
     # Watertight check
     is_watertight, wt_error = check_watertight(gen_path)
     result.is_watertight = is_watertight
-    if wt_error:
+    if wt_error and result.errors is not None:
         result.errors.append(f"Watertight: {wt_error}")
 
     # Component count check
     is_single, comp_error = check_single_component(gen_path, expected_components)
     result.is_single_component = is_single
-    if comp_error:
+    if comp_error and result.errors is not None:
         result.errors.append(f"Components: {comp_error}")
 
     # Checks requiring reference
     if not ref_path.exists():
-        result.errors.append(f"Reference file not found: {ref_path}")
+        if result.errors is not None:
+            result.errors.append(f"Reference file not found: {ref_path}")
         return result
 
     # Volume check
@@ -402,7 +413,7 @@ def perform_geometry_checks(
     result.generated_volume = gen_vol
     if ref_vol and gen_vol:
         result.volume_ratio = gen_vol / ref_vol
-    if vol_error:
+    if vol_error and result.errors is not None:
         result.errors.append(f"Volume: {vol_error}")
 
     # Similarity check (alignment + distances + bbox)
@@ -421,7 +432,7 @@ def perform_geometry_checks(
     if h95 is not None:
         result.hausdorff_passed = h95 <= hausdorff_threshold
 
-    if sim_error:
+    if sim_error and result.errors is not None:
         result.errors.append(f"Similarity: {sim_error}")
 
     return result
