@@ -14,4 +14,6 @@ wheels/
 .pytest_cache/
 .vscode/
 
+# Data and Artifacts
 logs/
+data/generated_stls/
