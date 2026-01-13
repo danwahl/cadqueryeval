@@ -11,6 +11,7 @@ sys.path.append(str(Path(__file__).parent))
 
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
+from adjustText import adjust_text
 from analyze_results import enrich_result, load_model_metadata, parse_eval_log
 
 
@@ -45,6 +46,7 @@ def plot_accuracy_vs_release(results, output_path: Path):
 
     # Keep track of plotted providers for the legend
     plotted_providers = set()
+    texts = []
 
     for dt, result in valid_results:
         provider = get_provider(result.model_id)
@@ -61,17 +63,28 @@ def plot_accuracy_vs_release(results, output_path: Path):
             s=100,
             label=label,
             alpha=0.8,
+            zorder=2,
         )
-        # Add model name annotation
+        # Add model name label
         short_name = result.model_id.split("/")[-1]
-        ax.annotate(
-            short_name,
-            (dt, result.accuracy),
-            xytext=(5, 5),
-            textcoords="offset points",
-            fontsize=8,
-            alpha=0.7,
+        texts.append(
+            ax.text(
+                dt,
+                result.accuracy,
+                short_name,
+                fontsize=8,
+                alpha=0.7,
+                zorder=10,
+            )
         )
+
+    # Automatically adjust text positions to avoid overlap
+    adjust_text(
+        texts,
+        arrowprops=dict(arrowstyle="-", color="gray", lw=0.5),
+        expand_points=(2.0, 2.0),
+        expand_text=(1.5, 1.5),
+    )
 
     # Sort legend items
     handles, labels = ax.get_legend_handles_labels()
