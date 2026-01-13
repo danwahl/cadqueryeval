@@ -56,3 +56,8 @@ testpaths = ["tests"]
 markers = [
     "docker: tests that require docker to run",
 ]
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.10.8",
+]

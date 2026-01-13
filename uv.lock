@@ -279,6 +279,11 @@ scorer = [
     { name = "trimesh" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "matplotlib" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "inspect-ai", specifier = ">=0.3.158" },
@@ -296,6 +301,9 @@ requires-dist = [
     { name = "types-pyyaml", marker = "extra == 'dev'", specifier = ">=6.0" },
 ]
 provides-extras = ["scorer", "dev"]
+
+[package.metadata.requires-dev]
+dev = [{ name = "matplotlib", specifier = ">=3.10.8" }]
 
 [[package]]
 name = "certifi"
