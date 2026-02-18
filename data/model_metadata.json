@@ -1,4 +1,19 @@
 {
+  "anthropic/claude-sonnet-4.6": {
+    "name": "Anthropic: Claude Sonnet 4.6",
+    "created": 1771342990,
+    "created_date": "2026-02-17",
+    "context_length": 1000000,
+    "pricing": {
+      "prompt": "0.000003",
+      "completion": "0.000015",
+      "prompt_per_million": 3.0,
+      "completion_per_million": 15.0
+    },
+    "description": "Sonnet 4.6 is Anthropic's most capable Sonnet-class model yet, with frontier performance across coding, agents, and professional work. It excels at iterative development, complex codebase navigation, end-to-end project management with memory, polished document creation, and confident computer use for web QA and workflow automation.",
+    "architecture": "text+image->text",
+    "top_provider": 128000
+  },
   "anthropic/claude-opus-4.6": {
     "name": "Anthropic: Claude Opus 4.6",
     "created": 1770219050,
@@ -50,14 +65,14 @@
     "created_date": "2025-12-01",
     "context_length": 163840,
     "pricing": {
-      "prompt": "0.00000025",
+      "prompt": "0.00000026",
       "completion": "0.00000038",
-      "prompt_per_million": 0.25,
+      "prompt_per_million": 0.26,
       "completion_per_million": 0.38
     },
     "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism that reduces training and inference cost while preserving quality in long-context scenarios. A scalable reinforcement learning post-training framework further improves reasoning, with reported performance in the GPT-5 class, and the model has demonstrated gold-medal results on the 2025 IMO and IOI. V3.2 also uses a large-scale agentic task synthesis pipeline to better integrate reasoning into tool-use settings, boosting compliance and generalization in interactive environments.\n\nUsers can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
     "architecture": "text->text",
-    "top_provider": 65536
+    "top_provider": null
   },
   "anthropic/claude-opus-4.5": {
     "name": "Anthropic: Claude Opus 4.5",
