@@ -1,4 +1,19 @@
 {
+  "openai/gpt-5.4": {
+    "name": "OpenAI: GPT-5.4",
+    "created": 1772734352,
+    "created_date": "2026-03-05",
+    "context_length": 1050000,
+    "pricing": {
+      "prompt": "0.0000025",
+      "completion": "0.000015",
+      "prompt_per_million": 2.5,
+      "completion_per_million": 15.0
+    },
+    "description": "GPT-5.4 is OpenAI\u2019s latest frontier model, unifying the Codex and GPT lines into a single system. It features a 1M+ token context window (922K input, 128K output) with support for text and image inputs, enabling high-context reasoning, coding, and multimodal analysis within the same workflow.\n\nThe model delivers improved performance in coding, document understanding, tool use, and instruction following. It is designed as a strong default for both general-purpose tasks and software engineering, capable of generating production-quality code, synthesizing information across multiple sources, and executing complex multi-step workflows with fewer iterations and greater token efficiency.",
+    "architecture": "text+image+file->text",
+    "top_provider": 128000
+  },
   "google/gemini-3.1-pro-preview": {
     "name": "Google: Gemini 3.1 Pro Preview",
     "created": 1771509627,
@@ -29,6 +44,21 @@
     "architecture": "text+image->text",
     "top_provider": 128000
   },
+  "minimax/minimax-m2.5": {
+    "name": "MiniMax: MiniMax M2.5",
+    "created": 1770908502,
+    "created_date": "2026-02-12",
+    "context_length": 196608,
+    "pricing": {
+      "prompt": "0.000000295",
+      "completion": "0.0000012",
+      "prompt_per_million": 0.295,
+      "completion_per_million": 1.2
+    },
+    "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1 to extend into general office work, reaching fluency in generating and operating Word, Excel, and Powerpoint files, context switching between diverse software environments, and working across different agent and human teams. Scoring 80.2% on SWE-Bench Verified, 51.3% on Multi-SWE-Bench, and 76.3% on BrowseComp, M2.5 is also more token efficient than previous generations, having been trained to optimize its actions and output through planning.",
+    "architecture": "text->text",
+    "top_provider": 196608
+  },
   "anthropic/claude-opus-4.6": {
     "name": "Anthropic: Claude Opus 4.6",
     "created": 1770219050,
@@ -57,7 +87,7 @@
     },
     "description": "Gemini 3 Flash Preview is a high speed, high value thinking model designed for agentic workflows, multi turn chat, and coding assistance. It delivers near Pro level reasoning and tool use performance with substantially lower latency than larger Gemini variants, making it well suited for interactive development, long running agent loops, and collaborative coding tasks. Compared to Gemini 2.5 Flash, it provides broad quality improvements across reasoning, multimodal understanding, and reliability.\n\nThe model supports a 1M token context window and multimodal inputs including text, images, audio, video, and PDFs, with text output. It includes configurable reasoning via thinking levels (minimal, low, medium, high), structured output, tool use, and automatic context caching. Gemini 3 Flash Preview is optimized for users who want strong reasoning and agentic behavior without the cost or latency of full scale frontier models.",
     "architecture": "text+image+file+audio+video->text",
-    "top_provider": 65535
+    "top_provider": 65536
   },
   "openai/gpt-5.2": {
     "name": "OpenAI: GPT-5.2",
@@ -80,14 +110,14 @@
     "created_date": "2025-12-01",
     "context_length": 163840,
     "pricing": {
-      "prompt": "0.00000026",
-      "completion": "0.00000038",
-      "prompt_per_million": 0.26,
-      "completion_per_million": 0.38
+      "prompt": "0.00000025",
+      "completion": "0.0000004",
+      "prompt_per_million": 0.25,
+      "completion_per_million": 0.39999999999999997
     },
     "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism that reduces training and inference cost while preserving quality in long-context scenarios. A scalable reinforcement learning post-training framework further improves reasoning, with reported performance in the GPT-5 class, and the model has demonstrated gold-medal results on the 2025 IMO and IOI. V3.2 also uses a large-scale agentic task synthesis pipeline to better integrate reasoning into tool-use settings, boosting compliance and generalization in interactive environments.\n\nUsers can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
     "architecture": "text->text",
-    "top_provider": null
+    "top_provider": 65536
   },
   "anthropic/claude-opus-4.5": {
     "name": "Anthropic: Claude Opus 4.5",
@@ -273,7 +303,7 @@
     "name": "Anthropic: Claude Sonnet 4",
     "created": 1747930371,
     "created_date": "2025-05-22",
-    "context_length": 1000000,
+    "context_length": 200000,
     "pricing": {
       "prompt": "0.000003",
       "completion": "0.000015",
