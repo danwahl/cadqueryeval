@@ -24,6 +24,9 @@ PROVIDER_COLORS = {
     "Anthropic": "#D97706",  # Orange
     "Google": "#4285F4",  # Blue
     "Openai": "#10A37F",  # Green
+    "X-Ai": "#58DF0D",  # Lime
+    "Deepseek": "#8A0DDF",  # Purple
+    "Minimax": "#DF0D69",  # Rose
 }
 
 

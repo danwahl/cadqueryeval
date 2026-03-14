@@ -1,4 +1,19 @@
 {
+  "x-ai/grok-4.20-beta": {
+    "name": "xAI: Grok 4.20 Beta",
+    "created": 1773325354,
+    "created_date": "2026-03-12",
+    "context_length": 2000000,
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000006",
+      "prompt_per_million": 2.0,
+      "completion_per_million": 6.0
+    },
+    "description": "Grok 4.20 Beta is xAI's newest flagship model with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering consistently precise and truthful responses.\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
+    "architecture": "text+image->text",
+    "top_provider": null
+  },
   "openai/gpt-5.4": {
     "name": "OpenAI: GPT-5.4",
     "created": 1772734352,
@@ -50,9 +65,9 @@
     "created_date": "2026-02-12",
     "context_length": 196608,
     "pricing": {
-      "prompt": "0.000000295",
+      "prompt": "0.00000025",
       "completion": "0.0000012",
-      "prompt_per_million": 0.295,
+      "prompt_per_million": 0.25,
       "completion_per_million": 1.2
     },
     "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1 to extend into general office work, reaching fluency in generating and operating Word, Excel, and Powerpoint files, context switching between diverse software environments, and working across different agent and human teams. Scoring 80.2% on SWE-Bench Verified, 51.3% on Multi-SWE-Bench, and 76.3% on BrowseComp, M2.5 is also more token efficient than previous generations, having been trained to optimize its actions and output through planning.",
@@ -110,14 +125,14 @@
     "created_date": "2025-12-01",
     "context_length": 163840,
     "pricing": {
-      "prompt": "0.00000025",
-      "completion": "0.0000004",
-      "prompt_per_million": 0.25,
-      "completion_per_million": 0.39999999999999997
+      "prompt": "0.00000026",
+      "completion": "0.00000038",
+      "prompt_per_million": 0.26,
+      "completion_per_million": 0.38
     },
     "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism that reduces training and inference cost while preserving quality in long-context scenarios. A scalable reinforcement learning post-training framework further improves reasoning, with reported performance in the GPT-5 class, and the model has demonstrated gold-medal results on the 2025 IMO and IOI. V3.2 also uses a large-scale agentic task synthesis pipeline to better integrate reasoning into tool-use settings, boosting compliance and generalization in interactive environments.\n\nUsers can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
     "architecture": "text->text",
-    "top_provider": 65536
+    "top_provider": null
   },
   "anthropic/claude-opus-4.5": {
     "name": "Anthropic: Claude Opus 4.5",
