@@ -1,4 +1,19 @@
 {
+  "minimax/minimax-m2.7": {
+    "name": "MiniMax: MiniMax M2.7",
+    "created": 1773836697,
+    "created_date": "2026-03-18",
+    "context_length": 204800,
+    "pricing": {
+      "prompt": "0.0000003",
+      "completion": "0.0000012",
+      "prompt_per_million": 0.3,
+      "completion_per_million": 1.2
+    },
+    "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent collaboration, enabling it to plan, execute, and refine complex tasks across dynamic environments.\n\nTrained for production-grade performance, M2.7 handles workflows such as live debugging, root cause analysis, financial modeling, and full document generation across Word, Excel, and PowerPoint. It delivers strong results on benchmarks including 56.2% on SWE-Pro and 57.0% on Terminal Bench 2, while achieving a 1495 ELO on GDPval-AA, setting a new standard for multi-agent systems operating in real-world digital workflows.",
+    "architecture": "text->text",
+    "top_provider": 131072
+  },
   "x-ai/grok-4.20-beta": {
     "name": "xAI: Grok 4.20 Beta",
     "created": 1773325354,
@@ -65,14 +80,14 @@
     "created_date": "2026-02-12",
     "context_length": 196608,
     "pricing": {
-      "prompt": "0.00000025",
-      "completion": "0.0000012",
-      "prompt_per_million": 0.25,
-      "completion_per_million": 1.2
+      "prompt": "0.0000002",
+      "completion": "0.00000117",
+      "prompt_per_million": 0.19999999999999998,
+      "completion_per_million": 1.17
     },
     "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1 to extend into general office work, reaching fluency in generating and operating Word, Excel, and Powerpoint files, context switching between diverse software environments, and working across different agent and human teams. Scoring 80.2% on SWE-Bench Verified, 51.3% on Multi-SWE-Bench, and 76.3% on BrowseComp, M2.5 is also more token efficient than previous generations, having been trained to optimize its actions and output through planning.",
     "architecture": "text->text",
-    "top_provider": 196608
+    "top_provider": 65536
   },
   "anthropic/claude-opus-4.6": {
     "name": "Anthropic: Claude Opus 4.6",
