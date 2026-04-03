@@ -1,4 +1,19 @@
 {
+  "google/gemma-4-31b-it": {
+    "name": "Google: Gemma 4 31B",
+    "created": 1775148486,
+    "created_date": "2026-04-02",
+    "context_length": 262144,
+    "pricing": {
+      "prompt": "0.00000014",
+      "completion": "0.0000004",
+      "prompt_per_million": 0.14,
+      "completion_per_million": 0.39999999999999997
+    },
+    "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function calling, and multilingual support across 140+ languages. Strong on coding, reasoning, and document understanding tasks. Apache 2.0 license.",
+    "architecture": "text+image+video->text",
+    "top_provider": 131072
+  },
   "minimax/minimax-m2.7": {
     "name": "MiniMax: MiniMax M2.7",
     "created": 1773836697,
@@ -13,21 +28,6 @@
     "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent collaboration, enabling it to plan, execute, and refine complex tasks across dynamic environments.\n\nTrained for production-grade performance, M2.7 handles workflows such as live debugging, root cause analysis, financial modeling, and full document generation across Word, Excel, and PowerPoint. It delivers strong results on benchmarks including 56.2% on SWE-Pro and 57.0% on Terminal Bench 2, while achieving a 1495 ELO on GDPval-AA, setting a new standard for multi-agent systems operating in real-world digital workflows.",
     "architecture": "text->text",
     "top_provider": 131072
-  },
-  "x-ai/grok-4.20-beta": {
-    "name": "xAI: Grok 4.20 Beta",
-    "created": 1773325354,
-    "created_date": "2026-03-12",
-    "context_length": 2000000,
-    "pricing": {
-      "prompt": "0.000002",
-      "completion": "0.000006",
-      "prompt_per_million": 2.0,
-      "completion_per_million": 6.0
-    },
-    "description": "Grok 4.20 Beta is xAI's newest flagship model with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering consistently precise and truthful responses.\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
-    "architecture": "text+image->text",
-    "top_provider": null
   },
   "openai/gpt-5.4": {
     "name": "OpenAI: GPT-5.4",
@@ -80,10 +80,10 @@
     "created_date": "2026-02-12",
     "context_length": 196608,
     "pricing": {
-      "prompt": "0.0000002",
-      "completion": "0.00000117",
-      "prompt_per_million": 0.19999999999999998,
-      "completion_per_million": 1.17
+      "prompt": "0.000000118",
+      "completion": "0.000001",
+      "prompt_per_million": 0.118,
+      "completion_per_million": 1.0
     },
     "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1 to extend into general office work, reaching fluency in generating and operating Word, Excel, and Powerpoint files, context switching between diverse software environments, and working across different agent and human teams. Scoring 80.2% on SWE-Bench Verified, 51.3% on Multi-SWE-Bench, and 76.3% on BrowseComp, M2.5 is also more token efficient than previous generations, having been trained to optimize its actions and output through planning.",
     "architecture": "text->text",
@@ -176,23 +176,8 @@
       "completion_per_million": 0.5
     },
     "description": "Grok 4.1 Fast is xAI's best agentic tool calling model that shines in real-world use cases like customer support and deep research. 2M context window.\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
-    "architecture": "text+image->text",
+    "architecture": "text+image+file->text",
     "top_provider": 30000
-  },
-  "google/gemini-3-pro-preview": {
-    "name": "Google: Gemini 3 Pro Preview",
-    "created": 1763474668,
-    "created_date": "2025-11-18",
-    "context_length": 1048576,
-    "pricing": {
-      "prompt": "0.000002",
-      "completion": "0.000012",
-      "prompt_per_million": 2.0,
-      "completion_per_million": 12.0
-    },
-    "description": "Gemini 3 Pro is Google\u2019s flagship frontier model for high-precision multimodal reasoning, combining strong performance across text, image, video, audio, and code with a 1M-token context window. Reasoning Details must be preserved when using multi-turn tool calling, see our docs here: https://openrouter.ai/docs/use-cases/reasoning-tokens#preserving-reasoning-blocks. It delivers state-of-the-art benchmark results in general reasoning, STEM problem solving, factual QA, and multimodal understanding, including leading scores on LMArena, GPQA Diamond, MathArena Apex, MMMU-Pro, and Video-MMMU. Interactions emphasize depth and interpretability: the model is designed to infer intent with minimal prompting and produce direct, insight-focused responses.\n\nBuilt for advanced development and agentic workflows, Gemini 3 Pro provides robust tool-calling, long-horizon planning stability, and strong zero-shot generation for complex UI, visualization, and coding tasks. It excels at agentic coding (SWE-Bench Verified, Terminal-Bench 2.0), multimodal analysis, and structured long-form tasks such as research synthesis, planning, and interactive learning experiences. Suitable applications include autonomous agents, coding assistants, multimodal analytics, scientific reasoning, and high-context information processing.",
-    "architecture": "text+image+file+audio+video->text",
-    "top_provider": 65536
   },
   "openai/gpt-5.1": {
     "name": "OpenAI: GPT-5.1",
@@ -523,5 +508,35 @@
     "description": "Claude 3 Haiku is Anthropic's fastest and most compact model for\nnear-instant responsiveness. Quick and accurate targeted performance.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/claude-3-haiku)\n\n#multimodal",
     "architecture": "text+image->text",
     "top_provider": 4096
+  },
+  "google/gemini-3-pro-preview": {
+    "name": "Google: Gemini 3 Pro Preview",
+    "created": 1763474668,
+    "created_date": "2025-11-18",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000012",
+      "prompt_per_million": 2.0,
+      "completion_per_million": 12.0
+    },
+    "description": null,
+    "architecture": "text+image+file+audio+video->text",
+    "top_provider": 65536
+  },
+  "x-ai/grok-4.20-beta": {
+    "name": "xAI: Grok 4.20 Beta",
+    "created": 1773325354,
+    "created_date": "2026-03-12",
+    "context_length": 2000000,
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000006",
+      "prompt_per_million": 2.0,
+      "completion_per_million": 6.0
+    },
+    "description": null,
+    "architecture": "text+image->text",
+    "top_provider": null
   }
 }
