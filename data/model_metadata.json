@@ -1,4 +1,19 @@
 {
+  "anthropic/claude-opus-4.7": {
+    "name": "Anthropic: Claude Opus 4.7",
+    "created": 1776351100,
+    "created_date": "2026-04-16",
+    "context_length": 1000000,
+    "pricing": {
+      "prompt": "0.000005",
+      "completion": "0.000025",
+      "prompt_per_million": 5.0,
+      "completion_per_million": 25.0
+    },
+    "description": "Opus 4.7 is the next generation of Anthropic's Opus family, built for long-running, asynchronous agents. Building on the coding and agentic strengths of Opus 4.6, it delivers stronger performance on...",
+    "architecture": "text+image->text",
+    "top_provider": 128000
+  },
   "z-ai/glm-5.1": {
     "name": "Z.ai: GLM 5.1",
     "created": 1775578025,
@@ -20,20 +35,20 @@
     "created_date": "2026-04-02",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.00000014",
-      "completion": "0.0000004",
-      "prompt_per_million": 0.14,
-      "completion_per_million": 0.39999999999999997
+      "prompt": "0.00000013",
+      "completion": "0.00000038",
+      "prompt_per_million": 0.13,
+      "completion_per_million": 0.38
     },
     "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
     "architecture": "text+image+video->text",
-    "top_provider": 131072
+    "top_provider": null
   },
   "minimax/minimax-m2.7": {
     "name": "MiniMax: MiniMax M2.7",
     "created": 1773836697,
     "created_date": "2026-03-18",
-    "context_length": 204800,
+    "context_length": 196608,
     "pricing": {
       "prompt": "0.0000003",
       "completion": "0.0000012",
@@ -42,7 +57,7 @@
     },
     "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent...",
     "architecture": "text->text",
-    "top_provider": 131072
+    "top_provider": null
   },
   "openai/gpt-5.4": {
     "name": "OpenAI: GPT-5.4",
@@ -333,7 +348,7 @@
     "name": "Anthropic: Claude Sonnet 4",
     "created": 1747930371,
     "created_date": "2025-05-22",
-    "context_length": 200000,
+    "context_length": 1000000,
     "pricing": {
       "prompt": "0.000003",
       "completion": "0.000015",
@@ -387,7 +402,7 @@
     },
     "description": "GPT-4.1 is a flagship large language model optimized for advanced instruction following, real-world software engineering, and long-context reasoning. It supports a 1 million token context window and outperforms GPT-4o and...",
     "architecture": "text+image+file->text",
-    "top_provider": 32768
+    "top_provider": null
   },
   "openai/gpt-4.1-mini": {
     "name": "OpenAI: GPT-4.1 Mini",
@@ -417,7 +432,7 @@
     },
     "description": "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and...",
     "architecture": "text+image+file->text",
-    "top_provider": 64000
+    "top_provider": 128000
   },
   "google/gemini-2.0-flash-001": {
     "name": "Google: Gemini 2.0 Flash",
