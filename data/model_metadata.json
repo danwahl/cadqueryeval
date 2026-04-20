@@ -149,6 +149,21 @@
     "architecture": "text+image->text",
     "top_provider": 128000
   },
+  "moonshotai/kimi-k2.5": {
+    "name": "MoonshotAI: Kimi K2.5",
+    "created": 1769487076,
+    "created_date": "2026-01-26",
+    "context_length": 262144,
+    "pricing": {
+      "prompt": "0.00000044",
+      "completion": "0.000002",
+      "prompt_per_million": 0.44,
+      "completion_per_million": 2.0
+    },
+    "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
+    "architecture": "text+image->text",
+    "top_provider": 65535
+  },
   "google/gemini-3-flash-preview": {
     "name": "Google: Gemini 3 Flash Preview",
     "created": 1765987078,
@@ -453,7 +468,7 @@
     "name": "Google: Gemini 2.0 Flash",
     "created": 1738769413,
     "created_date": "2025-02-05",
-    "context_length": 1000000,
+    "context_length": 1048576,
     "pricing": {
       "prompt": "0.0000001",
       "completion": "0.0000004",
