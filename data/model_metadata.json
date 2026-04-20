@@ -1,4 +1,19 @@
 {
+  "moonshotai/kimi-k2.6": {
+    "name": "MoonshotAI: Kimi K2.6",
+    "created": 1776699402,
+    "created_date": "2026-04-20",
+    "context_length": 262144,
+    "pricing": {
+      "prompt": "0.00000095",
+      "completion": "0.000004",
+      "prompt_per_million": 0.95,
+      "completion_per_million": 4.0
+    },
+    "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
+    "architecture": "text+image->text",
+    "top_provider": null
+  },
   "anthropic/claude-opus-4.7": {
     "name": "Anthropic: Claude Opus 4.7",
     "created": 1776351100,
@@ -20,10 +35,10 @@
     "created_date": "2026-04-07",
     "context_length": 202752,
     "pricing": {
-      "prompt": "0.00000095",
-      "completion": "0.00000315",
-      "prompt_per_million": 0.95,
-      "completion_per_million": 3.15
+      "prompt": "0.00000105",
+      "completion": "0.0000035",
+      "prompt_per_million": 1.0499999999999998,
+      "completion_per_million": 3.5
     },
     "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
     "architecture": "text->text",
@@ -110,10 +125,10 @@
     "created_date": "2026-02-12",
     "context_length": 196608,
     "pricing": {
-      "prompt": "0.000000118",
-      "completion": "0.00000099",
-      "prompt_per_million": 0.118,
-      "completion_per_million": 0.9900000000000001
+      "prompt": "0.00000015",
+      "completion": "0.0000012",
+      "prompt_per_million": 0.15,
+      "completion_per_million": 1.2
     },
     "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1...",
     "architecture": "text->text",
@@ -168,16 +183,16 @@
     "name": "DeepSeek: DeepSeek V3.2",
     "created": 1764594642,
     "created_date": "2025-12-01",
-    "context_length": 163840,
+    "context_length": 131072,
     "pricing": {
-      "prompt": "0.00000026",
-      "completion": "0.00000038",
-      "prompt_per_million": 0.26,
-      "completion_per_million": 0.38
+      "prompt": "0.000000252",
+      "completion": "0.000000378",
+      "prompt_per_million": 0.252,
+      "completion_per_million": 0.378
     },
     "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
     "architecture": "text->text",
-    "top_provider": null
+    "top_provider": 32768
   },
   "anthropic/claude-opus-4.5": {
     "name": "Anthropic: Claude Opus 4.5",
@@ -438,7 +453,7 @@
     "name": "Google: Gemini 2.0 Flash",
     "created": 1738769413,
     "created_date": "2025-02-05",
-    "context_length": 1048576,
+    "context_length": 1000000,
     "pricing": {
       "prompt": "0.0000001",
       "completion": "0.0000004",
