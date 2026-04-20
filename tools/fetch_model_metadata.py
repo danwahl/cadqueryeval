@@ -143,6 +143,14 @@ def main():
     all_models = fetch_openrouter_models()
     print(f"Retrieved {len(all_models)} models from API")
 
+    # Load existing metadata to preserve info for models removed from API
+    existing_metadata = {}
+    if args.output.exists():
+        try:
+            existing_metadata = json.loads(args.output.read_text())
+        except (json.JSONDecodeError, OSError):
+            pass
+
     # Extract metadata
     if model_ids is None:
         # All models mode
@@ -158,14 +166,29 @@ def main():
     else:
         metadata = extract_model_metadata(all_models, model_ids)
 
-    # Report missing models
+    # Report missing models and preserve existing metadata for them
     if model_ids:
         found = set(metadata.keys())
         missing = model_ids - found
         if missing:
-            print(f"\nWarning: {len(missing)} models not found in API:")
+            preserved = []
+            not_found = []
             for m in sorted(missing):
-                print(f"  - {m}")
+                if m in existing_metadata:
+                    metadata[m] = existing_metadata[m]
+                    preserved.append(m)
+                else:
+                    not_found.append(m)
+            if preserved:
+                n = len(preserved)
+                print(f"\nPreserved metadata for {n} models no longer in API:")
+                for m in preserved:
+                    print(f"  - {m}")
+            if not_found:
+                n = len(not_found)
+                print(f"\nWarning: {n} models not found in API or existing metadata:")
+                for m in not_found:
+                    print(f"  - {m}")
 
     # Save output
     args.output.parent.mkdir(parents=True, exist_ok=True)
