@@ -5,10 +5,10 @@
     "created_date": "2026-04-20",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.00000095",
-      "completion": "0.000004",
-      "prompt_per_million": 0.95,
-      "completion_per_million": 4.0
+      "prompt": "0.00000075",
+      "completion": "0.0000035",
+      "prompt_per_million": 0.75,
+      "completion_per_million": 3.5
     },
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
     "architecture": "text+image->text",
@@ -58,6 +58,21 @@
     "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
     "architecture": "text+image+video->text",
     "top_provider": null
+  },
+  "qwen/qwen3.6-plus": {
+    "name": "Qwen: Qwen3.6 Plus",
+    "created": 1775133557,
+    "created_date": "2026-04-02",
+    "context_length": 1000000,
+    "pricing": {
+      "prompt": "0.000000325",
+      "completion": "0.00000195",
+      "prompt_per_million": 0.325,
+      "completion_per_million": 1.95
+    },
+    "description": "Qwen 3.6 Plus builds on a hybrid architecture that combines efficient linear attention with sparse mixture-of-experts routing, enabling strong scalability and high-performance inference. Compared to the 3.5 series, it delivers...",
+    "architecture": "text+image+video->text",
+    "top_provider": 65536
   },
   "minimax/minimax-m2.7": {
     "name": "MiniMax: MiniMax M2.7",
@@ -207,7 +222,7 @@
     },
     "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
     "architecture": "text->text",
-    "top_provider": 32768
+    "top_provider": 65536
   },
   "anthropic/claude-opus-4.5": {
     "name": "Anthropic: Claude Opus 4.5",
