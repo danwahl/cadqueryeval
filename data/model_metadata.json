@@ -1,18 +1,48 @@
 {
+  "deepseek/deepseek-v4-pro": {
+    "name": "DeepSeek: DeepSeek V4 Pro",
+    "created": 1777000679,
+    "created_date": "2026-04-23",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.00000174",
+      "completion": "0.00000348",
+      "prompt_per_million": 1.74,
+      "completion_per_million": 3.48
+    },
+    "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
+    "architecture": "text->text",
+    "top_provider": 384000
+  },
+  "deepseek/deepseek-v4-flash": {
+    "name": "DeepSeek: DeepSeek V4 Flash",
+    "created": 1777000666,
+    "created_date": "2026-04-23",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.00000014",
+      "completion": "0.00000028",
+      "prompt_per_million": 0.14,
+      "completion_per_million": 0.28
+    },
+    "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
+    "architecture": "text->text",
+    "top_provider": 384000
+  },
   "moonshotai/kimi-k2.6": {
     "name": "MoonshotAI: Kimi K2.6",
     "created": 1776699402,
     "created_date": "2026-04-20",
-    "context_length": 262144,
+    "context_length": 256000,
     "pricing": {
-      "prompt": "0.00000075",
-      "completion": "0.0000035",
-      "prompt_per_million": 0.75,
-      "completion_per_million": 3.5
+      "prompt": "0.0000007448",
+      "completion": "0.000004655",
+      "prompt_per_million": 0.7448,
+      "completion_per_million": 4.655
     },
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
     "architecture": "text+image->text",
-    "top_provider": null
+    "top_provider": 65536
   },
   "anthropic/claude-opus-4.7": {
     "name": "Anthropic: Claude Opus 4.7",
@@ -141,13 +171,13 @@
     "context_length": 196608,
     "pricing": {
       "prompt": "0.00000015",
-      "completion": "0.0000012",
+      "completion": "0.00000115",
       "prompt_per_million": 0.15,
-      "completion_per_million": 1.2
+      "completion_per_million": 1.15
     },
     "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1...",
     "architecture": "text->text",
-    "top_provider": 65536
+    "top_provider": null
   },
   "anthropic/claude-opus-4.6": {
     "name": "Anthropic: Claude Opus 4.6",
