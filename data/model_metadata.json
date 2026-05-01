@@ -1,4 +1,19 @@
 {
+  "x-ai/grok-4.3": {
+    "name": "xAI: Grok 4.3",
+    "created": 1777591821,
+    "created_date": "2026-04-30",
+    "context_length": 1000000,
+    "pricing": {
+      "prompt": "0.00000125",
+      "completion": "0.0000025",
+      "prompt_per_million": 1.25,
+      "completion_per_million": 2.5
+    },
+    "description": "Grok 4.3 is a reasoning model from xAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
+    "architecture": "text+image->text",
+    "top_provider": null
+  },
   "openai/gpt-5.5": {
     "name": "OpenAI: GPT-5.5",
     "created": 1777051893,
@@ -20,10 +35,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000174",
-      "completion": "0.00000348",
-      "prompt_per_million": 1.74,
-      "completion_per_million": 3.48
+      "prompt": "0.000000435",
+      "completion": "0.00000087",
+      "prompt_per_million": 0.435,
+      "completion_per_million": 0.87
     },
     "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
     "architecture": "text->text",
@@ -48,16 +63,16 @@
     "name": "MoonshotAI: Kimi K2.6",
     "created": 1776699402,
     "created_date": "2026-04-20",
-    "context_length": 256000,
+    "context_length": 262142,
     "pricing": {
-      "prompt": "0.0000007448",
-      "completion": "0.000004655",
-      "prompt_per_million": 0.7448,
-      "completion_per_million": 4.655
+      "prompt": "0.00000074",
+      "completion": "0.00000349",
+      "prompt_per_million": 0.74,
+      "completion_per_million": 3.49
     },
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
     "architecture": "text+image->text",
-    "top_provider": 65536
+    "top_provider": 262142
   },
   "anthropic/claude-opus-4.7": {
     "name": "Anthropic: Claude Opus 4.7",
@@ -102,7 +117,7 @@
     },
     "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
     "architecture": "text+image+video->text",
-    "top_provider": null
+    "top_provider": 16384
   },
   "qwen/qwen3.6-plus": {
     "name": "Qwen: Qwen3.6 Plus",
@@ -192,7 +207,7 @@
     },
     "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1...",
     "architecture": "text->text",
-    "top_provider": null
+    "top_provider": 131072
   },
   "anthropic/claude-opus-4.6": {
     "name": "Anthropic: Claude Opus 4.6",
@@ -528,7 +543,7 @@
     "name": "Google: Gemini 2.0 Flash",
     "created": 1738769413,
     "created_date": "2025-02-05",
-    "context_length": 1048576,
+    "context_length": 1000000,
     "pricing": {
       "prompt": "0.0000001",
       "completion": "0.0000004",
