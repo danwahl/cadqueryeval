@@ -1,4 +1,19 @@
 {
+  "google/gemini-3.1-flash-lite": {
+    "name": "Google: Gemini 3.1 Flash Lite",
+    "created": 1778168828,
+    "created_date": "2026-05-07",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.00000025",
+      "completion": "0.0000015",
+      "prompt_per_million": 0.25,
+      "completion_per_million": 1.5
+    },
+    "description": "Gemini 3.1 Flash Lite is Google\u2019s GA high-efficiency multimodal model optimized for low-latency, high-volume workloads. It supports text, image, video, audio, and PDF inputs, and is designed for lightweight agentic...",
+    "architecture": "text+image+file+audio+video->text",
+    "top_provider": 65536
+  },
   "x-ai/grok-4.3": {
     "name": "xAI: Grok 4.3",
     "created": 1777591821,
@@ -63,16 +78,16 @@
     "name": "MoonshotAI: Kimi K2.6",
     "created": 1776699402,
     "created_date": "2026-04-20",
-    "context_length": 262142,
+    "context_length": 262144,
     "pricing": {
-      "prompt": "0.00000074",
-      "completion": "0.00000349",
-      "prompt_per_million": 0.74,
-      "completion_per_million": 3.49
+      "prompt": "0.00000075",
+      "completion": "0.0000035",
+      "prompt_per_million": 0.75,
+      "completion_per_million": 3.5
     },
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
     "architecture": "text+image->text",
-    "top_provider": 262142
+    "top_provider": 16384
   },
   "anthropic/claude-opus-4.7": {
     "name": "Anthropic: Claude Opus 4.7",
@@ -537,13 +552,13 @@
     },
     "description": "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and...",
     "architecture": "text+image+file->text",
-    "top_provider": 128000
+    "top_provider": 64000
   },
   "google/gemini-2.0-flash-001": {
     "name": "Google: Gemini 2.0 Flash",
     "created": 1738769413,
     "created_date": "2025-02-05",
-    "context_length": 1000000,
+    "context_length": 1048576,
     "pricing": {
       "prompt": "0.0000001",
       "completion": "0.0000004",
