@@ -1,4 +1,19 @@
 {
+  "google/gemini-3.5-flash": {
+    "name": "Google: Gemini 3.5 Flash",
+    "created": 1779193800,
+    "created_date": "2026-05-19",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.0000015",
+      "completion": "0.000009",
+      "prompt_per_million": 1.5,
+      "completion_per_million": 9.0
+    },
+    "description": "Gemini 3.5 Flash is Google's high-efficiency multimodal model, bringing near-Pro level coding and reasoning at Flash-tier cost and speed. It is highly optimized for coding proficiency and parallel agentic execution...",
+    "architecture": "text+image+file+audio+video->text",
+    "top_provider": 65536
+  },
   "google/gemini-3.1-flash-lite": {
     "name": "Google: Gemini 3.1 Flash Lite",
     "created": 1778168828,
@@ -123,16 +138,16 @@
     "name": "Z.ai: GLM 5.1",
     "created": 1775578025,
     "created_date": "2026-04-07",
-    "context_length": 202752,
+    "context_length": 202800,
     "pricing": {
-      "prompt": "0.00000098",
-      "completion": "0.00000308",
-      "prompt_per_million": 0.98,
-      "completion_per_million": 3.08
+      "prompt": "0",
+      "completion": "0",
+      "prompt_per_million": 0.0,
+      "completion_per_million": 0.0
     },
     "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
     "architecture": "text->text",
-    "top_provider": null
+    "top_provider": 202800
   },
   "google/gemma-4-31b-it": {
     "name": "Google: Gemma 4 31B",
@@ -543,7 +558,7 @@
     "name": "Google: Gemini 2.0 Flash",
     "created": 1738769413,
     "created_date": "2025-02-05",
-    "context_length": 1048576,
+    "context_length": 1000000,
     "pricing": {
       "prompt": "0.0000001",
       "completion": "0.0000004",
