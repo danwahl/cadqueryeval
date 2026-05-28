@@ -1,14 +1,29 @@
 {
+  "anthropic/claude-opus-4.8": {
+    "name": "Anthropic: Claude Opus 4.8",
+    "created": 1779905091,
+    "created_date": "2026-05-27",
+    "context_length": 1000000,
+    "pricing": {
+      "prompt": "0.000005",
+      "completion": "0.000025",
+      "prompt_per_million": 5.0,
+      "completion_per_million": 25.0
+    },
+    "description": "Claude Opus 4.8 is Anthropic's most capable generally available model in the Opus family. It supports text, image, and file inputs with text output, with reasoning support and a 1M-token...",
+    "architecture": "text+image+file->text",
+    "top_provider": 128000
+  },
   "qwen/qwen3.7-max": {
     "name": "Qwen: Qwen3.7 Max",
     "created": 1779376861,
     "created_date": "2026-05-21",
     "context_length": 1000000,
     "pricing": {
-      "prompt": "0.0000025",
-      "completion": "0.0000075",
-      "prompt_per_million": 2.5,
-      "completion_per_million": 7.5
+      "prompt": "0.00000125",
+      "completion": "0.00000375",
+      "prompt_per_million": 1.25,
+      "completion_per_million": 3.75
     },
     "description": "Qwen3.7-Max is the flagship model in Alibaba's Qwen3.7 series. It supports text input and output and is designed for agent-centric workloads, with particular strengths in coding, office and productivity tasks,...",
     "architecture": "text->text",
@@ -95,14 +110,14 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000000112",
-      "completion": "0.000000224",
-      "prompt_per_million": 0.112,
-      "completion_per_million": 0.224
+      "prompt": "0.0000001",
+      "completion": "0.0000002",
+      "prompt_per_million": 0.09999999999999999,
+      "completion_per_million": 0.19999999999999998
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
-    "top_provider": null
+    "top_provider": 16384
   },
   "tencent/hy3-preview": {
     "name": "Tencent: Hy3 preview",
@@ -110,14 +125,14 @@
     "created_date": "2026-04-22",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.000000066",
-      "completion": "0.00000026",
-      "prompt_per_million": 0.06599999999999999,
-      "completion_per_million": 0.26
+      "prompt": "0.000000063",
+      "completion": "0.00000021",
+      "prompt_per_million": 0.063,
+      "completion_per_million": 0.21
     },
     "description": "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
     "architecture": "text->text",
-    "top_provider": 262144
+    "top_provider": null
   },
   "moonshotai/kimi-k2.6": {
     "name": "MoonshotAI: Kimi K2.6",
