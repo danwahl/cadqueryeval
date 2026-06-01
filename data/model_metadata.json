@@ -1,4 +1,19 @@
 {
+  "minimax/minimax-m3": {
+    "name": "MiniMax: MiniMax M3",
+    "created": 1780245374,
+    "created_date": "2026-05-31",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.0000003",
+      "completion": "0.0000012",
+      "prompt_per_million": 0.3,
+      "completion_per_million": 1.2
+    },
+    "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,...",
+    "architecture": "text+image+video->text",
+    "top_provider": 512000
+  },
   "anthropic/claude-opus-4.8": {
     "name": "Anthropic: Claude Opus 4.8",
     "created": 1779905091,
@@ -110,14 +125,14 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.0000001",
-      "completion": "0.0000002",
-      "prompt_per_million": 0.09999999999999999,
-      "completion_per_million": 0.19999999999999998
+      "prompt": "0.0000000983",
+      "completion": "0.0000001966",
+      "prompt_per_million": 0.0983,
+      "completion_per_million": 0.1966
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
-    "top_provider": 16384
+    "top_provider": 131072
   },
   "tencent/hy3-preview": {
     "name": "Tencent: Hy3 preview",
@@ -140,14 +155,14 @@
     "created_date": "2026-04-20",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.00000073",
-      "completion": "0.00000349",
-      "prompt_per_million": 0.73,
-      "completion_per_million": 3.49
+      "prompt": "0.000000684",
+      "completion": "0.00000342",
+      "prompt_per_million": 0.684,
+      "completion_per_million": 3.42
     },
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
     "architecture": "text+image->text",
-    "top_provider": 262142
+    "top_provider": 262144
   },
   "anthropic/claude-opus-4.7": {
     "name": "Anthropic: Claude Opus 4.7",
@@ -215,14 +230,14 @@
     "created_date": "2026-03-18",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.000000279",
+      "prompt": "0.00000026",
       "completion": "0.0000012",
-      "prompt_per_million": 0.27899999999999997,
+      "prompt_per_million": 0.26,
       "completion_per_million": 1.2
     },
     "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent...",
     "architecture": "text->text",
-    "top_provider": 131072
+    "top_provider": null
   },
   "openai/gpt-5.4": {
     "name": "OpenAI: GPT-5.4",
@@ -588,7 +603,7 @@
     "name": "Google: Gemini 2.0 Flash",
     "created": 1738769413,
     "created_date": "2025-02-05",
-    "context_length": 1000000,
+    "context_length": 1048576,
     "pricing": {
       "prompt": "0.0000001",
       "completion": "0.0000004",
