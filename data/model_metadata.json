@@ -1,4 +1,19 @@
 {
+  "qwen/qwen3.7-plus": {
+    "name": "Qwen: Qwen3.7 Plus",
+    "created": 1780491783,
+    "created_date": "2026-06-03",
+    "context_length": 1000000,
+    "pricing": {
+      "prompt": "0.0000004",
+      "completion": "0.0000016",
+      "prompt_per_million": 0.39999999999999997,
+      "completion_per_million": 1.5999999999999999
+    },
+    "description": "Qwen3.7-Plus is a cost-effective model in Alibaba's Qwen3.7 series. It supports text and image input with text output, building on the series' text capabilities with a comprehensive upgrade to its...",
+    "architecture": "text+image->text",
+    "top_provider": 65536
+  },
   "minimax/minimax-m3": {
     "name": "MiniMax: MiniMax M3",
     "created": 1780245374,
@@ -230,14 +245,14 @@
     "created_date": "2026-03-18",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.00000026",
+      "prompt": "0.000000279",
       "completion": "0.0000012",
-      "prompt_per_million": 0.26,
+      "prompt_per_million": 0.27899999999999997,
       "completion_per_million": 1.2
     },
     "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent...",
     "architecture": "text->text",
-    "top_provider": null
+    "top_provider": 131072
   },
   "openai/gpt-5.4": {
     "name": "OpenAI: GPT-5.4",
@@ -365,14 +380,14 @@
     "created_date": "2025-12-01",
     "context_length": 131072,
     "pricing": {
-      "prompt": "0.000000252",
-      "completion": "0.000000378",
-      "prompt_per_million": 0.252,
-      "completion_per_million": 0.378
+      "prompt": "0.0000002288",
+      "completion": "0.0000003432",
+      "prompt_per_million": 0.2288,
+      "completion_per_million": 0.3432
     },
     "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
     "architecture": "text->text",
-    "top_provider": 65536
+    "top_provider": 64000
   },
   "anthropic/claude-opus-4.5": {
     "name": "Anthropic: Claude Opus 4.5",
@@ -599,21 +614,6 @@
     "architecture": "text+image+file->text",
     "top_provider": 32768
   },
-  "google/gemini-2.0-flash-001": {
-    "name": "Google: Gemini 2.0 Flash",
-    "created": 1738769413,
-    "created_date": "2025-02-05",
-    "context_length": 1048576,
-    "pricing": {
-      "prompt": "0.0000001",
-      "completion": "0.0000004",
-      "prompt_per_million": 0.09999999999999999,
-      "completion_per_million": 0.39999999999999997
-    },
-    "description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-    "architecture": "text+image+file+audio+video->text",
-    "top_provider": 8192
-  },
   "openai/o3-mini": {
     "name": "OpenAI: o3 Mini",
     "created": 1738351721,
@@ -718,6 +718,21 @@
     "description": "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and...",
     "architecture": "text+image+file->text",
     "top_provider": 64000
+  },
+  "google/gemini-2.0-flash-001": {
+    "name": "Google: Gemini 2.0 Flash",
+    "created": 1738769413,
+    "created_date": "2025-02-05",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.0000001",
+      "completion": "0.0000004",
+      "prompt_per_million": 0.09999999999999999,
+      "completion_per_million": 0.39999999999999997
+    },
+    "description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
+    "architecture": "text+image+file+audio+video->text",
+    "top_provider": 8192
   },
   "google/gemini-3-pro-preview": {
     "name": "Google: Gemini 3 Pro Preview",
