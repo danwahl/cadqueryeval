@@ -1,4 +1,19 @@
 {
+  "anthropic/claude-fable-5": {
+    "name": "Anthropic: Claude Fable 5",
+    "created": 1781007515,
+    "created_date": "2026-06-09",
+    "context_length": 1000000,
+    "pricing": {
+      "prompt": "0.00001",
+      "completion": "0.00005",
+      "prompt_per_million": 10.0,
+      "completion_per_million": 50.0
+    },
+    "description": "Claude Fable 5 is a Mythos-class model from Anthropic, built for autonomous knowledge work and coding. It supports text, image, and file inputs with text output, with reasoning support and...",
+    "architecture": "text+image+file->text",
+    "top_provider": 128000
+  },
   "qwen/qwen3.7-plus": {
     "name": "Qwen: Qwen3.7 Plus",
     "created": 1780491783,
@@ -170,14 +185,14 @@
     "created_date": "2026-04-20",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.000000684",
-      "completion": "0.00000342",
-      "prompt_per_million": 0.684,
-      "completion_per_million": 3.42
+      "prompt": "0.00000068",
+      "completion": "0.00000341",
+      "prompt_per_million": 0.6799999999999999,
+      "completion_per_million": 3.41
     },
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
     "architecture": "text+image->text",
-    "top_provider": 262144
+    "top_provider": 262142
   },
   "anthropic/claude-opus-4.7": {
     "name": "Anthropic: Claude Opus 4.7",
@@ -216,13 +231,13 @@
     "context_length": 262144,
     "pricing": {
       "prompt": "0.00000012",
-      "completion": "0.00000037",
+      "completion": "0.00000036",
       "prompt_per_million": 0.12,
-      "completion_per_million": 0.37
+      "completion_per_million": 0.36
     },
     "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
     "architecture": "text+image+video->text",
-    "top_provider": 16384
+    "top_provider": 8192
   },
   "qwen/qwen3.6-plus": {
     "name": "Qwen: Qwen3.6 Plus",
@@ -245,10 +260,10 @@
     "created_date": "2026-03-18",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.000000279",
-      "completion": "0.0000012",
-      "prompt_per_million": 0.27899999999999997,
-      "completion_per_million": 1.2
+      "prompt": "0.00000027",
+      "completion": "0.00000108",
+      "prompt_per_million": 0.27,
+      "completion_per_million": 1.08
     },
     "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent...",
     "architecture": "text->text",
@@ -306,9 +321,9 @@
     "context_length": 204800,
     "pricing": {
       "prompt": "0.00000015",
-      "completion": "0.00000115",
+      "completion": "0.0000009",
       "prompt_per_million": 0.15,
-      "completion_per_million": 1.15
+      "completion_per_million": 0.8999999999999999
     },
     "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1...",
     "architecture": "text->text",
