@@ -1,4 +1,19 @@
 {
+  "z-ai/glm-5.2": {
+    "name": "Z.ai: GLM 5.2",
+    "created": 1781631930,
+    "created_date": "2026-06-16",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.0000014",
+      "completion": "0.0000044",
+      "prompt_per_million": 1.4,
+      "completion_per_million": 4.4
+    },
+    "description": "GLM-5.2 is Z.ai\u2019s flagship model for the era of long-horizon tasks. With a truly usable 1M-token context window, it can handle project-level engineering context, execute long-running tasks more reliably, follow...",
+    "architecture": "text->text",
+    "top_provider": 131072
+  },
   "anthropic/claude-fable-5": {
     "name": "Anthropic: Claude Fable 5",
     "created": 1781007515,
@@ -20,10 +35,10 @@
     "created_date": "2026-06-03",
     "context_length": 1000000,
     "pricing": {
-      "prompt": "0.0000004",
-      "completion": "0.0000016",
-      "prompt_per_million": 0.39999999999999997,
-      "completion_per_million": 1.5999999999999999
+      "prompt": "0.00000032",
+      "completion": "0.00000128",
+      "prompt_per_million": 0.32,
+      "completion_per_million": 1.28
     },
     "description": "Qwen3.7-Plus is a cost-effective model in Alibaba's Qwen3.7 series. It supports text and image input with text output, building on the series' text capabilities with a comprehensive upgrade to its...",
     "architecture": "text+image->text",
@@ -155,14 +170,14 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.0000000983",
-      "completion": "0.0000001966",
-      "prompt_per_million": 0.0983,
-      "completion_per_million": 0.1966
+      "prompt": "0.000000098",
+      "completion": "0.000000196",
+      "prompt_per_million": 0.098,
+      "completion_per_million": 0.196
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
-    "top_provider": 131072
+    "top_provider": null
   },
   "tencent/hy3-preview": {
     "name": "Tencent: Hy3 preview",
@@ -170,14 +185,14 @@
     "created_date": "2026-04-22",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.000000063",
-      "completion": "0.00000021",
-      "prompt_per_million": 0.063,
-      "completion_per_million": 0.21
+      "prompt": "0.000000066",
+      "completion": "0.00000026",
+      "prompt_per_million": 0.06599999999999999,
+      "completion_per_million": 0.26
     },
     "description": "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
     "architecture": "text->text",
-    "top_provider": null
+    "top_provider": 262144
   },
   "moonshotai/kimi-k2.6": {
     "name": "MoonshotAI: Kimi K2.6",
@@ -231,13 +246,13 @@
     "context_length": 262144,
     "pricing": {
       "prompt": "0.00000012",
-      "completion": "0.00000036",
+      "completion": "0.00000035",
       "prompt_per_million": 0.12,
-      "completion_per_million": 0.36
+      "completion_per_million": 0.35
     },
     "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
     "architecture": "text+image+video->text",
-    "top_provider": 8192
+    "top_provider": 262144
   },
   "qwen/qwen3.6-plus": {
     "name": "Qwen: Qwen3.6 Plus",
@@ -260,10 +275,10 @@
     "created_date": "2026-03-18",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.00000027",
-      "completion": "0.00000108",
-      "prompt_per_million": 0.27,
-      "completion_per_million": 1.08
+      "prompt": "0.00000025",
+      "completion": "0.000001",
+      "prompt_per_million": 0.25,
+      "completion_per_million": 1.0
     },
     "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent...",
     "architecture": "text->text",
@@ -350,14 +365,14 @@
     "created_date": "2026-01-26",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.0000004",
-      "completion": "0.0000019",
-      "prompt_per_million": 0.39999999999999997,
-      "completion_per_million": 1.9
+      "prompt": "0.000000375",
+      "completion": "0.000002025",
+      "prompt_per_million": 0.375,
+      "completion_per_million": 2.025
     },
     "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
     "architecture": "text+image->text",
-    "top_provider": 262144
+    "top_provider": null
   },
   "google/gemini-3-flash-preview": {
     "name": "Google: Gemini 3 Flash Preview",
