@@ -1,18 +1,33 @@
 {
+  "anthropic/claude-sonnet-5": {
+    "name": "Anthropic: Claude Sonnet 5",
+    "created": 1782843083,
+    "created_date": "2026-06-30",
+    "context_length": 1000000,
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "prompt_per_million": 2.0,
+      "completion_per_million": 10.0
+    },
+    "description": "Sonnet 5 is Anthropic's most capable Sonnet-class model, with frontier performance across coding, agents, and professional work. It supports adaptive thinking with selectable reasoning effort levels (low, medium, high, max,...",
+    "architecture": "text+image+file->text",
+    "top_provider": 128000
+  },
   "z-ai/glm-5.2": {
     "name": "Z.ai: GLM 5.2",
     "created": 1781631930,
     "created_date": "2026-06-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.0000014",
-      "completion": "0.0000044",
-      "prompt_per_million": 1.4,
-      "completion_per_million": 4.4
+      "prompt": "0.00000093",
+      "completion": "0.000003",
+      "prompt_per_million": 0.9299999999999999,
+      "completion_per_million": 3.0
     },
-    "description": "GLM-5.2 is Z.ai\u2019s flagship model for the era of long-horizon tasks. With a truly usable 1M-token context window, it can handle project-level engineering context, execute long-running tasks more reliably, follow...",
+    "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
     "architecture": "text->text",
-    "top_provider": 131072
+    "top_provider": 32768
   },
   "anthropic/claude-fable-5": {
     "name": "Anthropic: Claude Fable 5",
@@ -131,7 +146,7 @@
       "completion_per_million": 2.5
     },
     "description": "Grok 4.3 is a reasoning model from xAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
-    "architecture": "text+image->text",
+    "architecture": "text+image+file->text",
     "top_provider": null
   },
   "openai/gpt-5.5": {
@@ -185,14 +200,14 @@
     "created_date": "2026-04-22",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.000000066",
-      "completion": "0.00000026",
-      "prompt_per_million": 0.06599999999999999,
-      "completion_per_million": 0.26
+      "prompt": "0.000000063",
+      "completion": "0.00000021",
+      "prompt_per_million": 0.063,
+      "completion_per_million": 0.21
     },
     "description": "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
     "architecture": "text->text",
-    "top_provider": 262144
+    "top_provider": null
   },
   "moonshotai/kimi-k2.6": {
     "name": "MoonshotAI: Kimi K2.6",
@@ -200,14 +215,14 @@
     "created_date": "2026-04-20",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.00000068",
-      "completion": "0.00000341",
-      "prompt_per_million": 0.6799999999999999,
-      "completion_per_million": 3.41
+      "prompt": "0.00000055",
+      "completion": "0.0000032",
+      "prompt_per_million": 0.55,
+      "completion_per_million": 3.1999999999999997
     },
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
     "architecture": "text+image->text",
-    "top_provider": 262142
+    "top_provider": 262144
   },
   "anthropic/claude-opus-4.7": {
     "name": "Anthropic: Claude Opus 4.7",
@@ -230,10 +245,10 @@
     "created_date": "2026-04-07",
     "context_length": 202752,
     "pricing": {
-      "prompt": "0.00000098",
-      "completion": "0.00000308",
-      "prompt_per_million": 0.98,
-      "completion_per_million": 3.08
+      "prompt": "0.000000975",
+      "completion": "0.0000043",
+      "prompt_per_million": 0.975,
+      "completion_per_million": 4.300000000000001
     },
     "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
     "architecture": "text->text",
@@ -275,14 +290,14 @@
     "created_date": "2026-03-18",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.00000025",
-      "completion": "0.000001",
-      "prompt_per_million": 0.25,
-      "completion_per_million": 1.0
+      "prompt": "0.00000018",
+      "completion": "0.00000072",
+      "prompt_per_million": 0.18,
+      "completion_per_million": 0.72
     },
     "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent...",
     "architecture": "text->text",
-    "top_provider": 131072
+    "top_provider": 196608
   },
   "openai/gpt-5.4": {
     "name": "OpenAI: GPT-5.4",
@@ -335,10 +350,10 @@
     "created_date": "2026-02-12",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.00000015",
-      "completion": "0.0000009",
-      "prompt_per_million": 0.15,
-      "completion_per_million": 0.8999999999999999
+      "prompt": "0.00000012",
+      "completion": "0.00000048",
+      "prompt_per_million": 0.12,
+      "completion_per_million": 0.48
     },
     "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1...",
     "architecture": "text->text",
@@ -387,7 +402,7 @@
     },
     "description": "Gemini 3 Flash Preview is a high speed, high value thinking model designed for agentic workflows, multi turn chat, and coding assistance. It delivers near Pro level reasoning and tool...",
     "architecture": "text+image+file+audio+video->text",
-    "top_provider": 65536
+    "top_provider": 65535
   },
   "openai/gpt-5.2": {
     "name": "OpenAI: GPT-5.2",
@@ -674,21 +689,6 @@
     "architecture": "text+image+file->text",
     "top_provider": 100000
   },
-  "anthropic/claude-3.5-haiku": {
-    "name": "Anthropic: Claude 3.5 Haiku",
-    "created": 1730678400,
-    "created_date": "2024-11-03",
-    "context_length": 200000,
-    "pricing": {
-      "prompt": "0.0000008",
-      "completion": "0.000004",
-      "prompt_per_million": 0.7999999999999999,
-      "completion_per_million": 4.0
-    },
-    "description": "Claude 3.5 Haiku features offers enhanced capabilities in speed, coding accuracy, and tool use. Engineered to excel in real-time applications, it delivers quick response times that are essential for dynamic...",
-    "architecture": "text+image->text",
-    "top_provider": 8192
-  },
   "openai/gpt-4o": {
     "name": "OpenAI: GPT-4o",
     "created": 1715558400,
@@ -718,6 +718,21 @@
     "description": "Claude 3 Haiku is Anthropic's fastest and most compact model for\nnear-instant responsiveness. Quick and accurate targeted performance.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/claude-3-haiku)\n\n#multimodal",
     "architecture": "text+image->text",
     "top_provider": 4096
+  },
+  "anthropic/claude-3.5-haiku": {
+    "name": "Anthropic: Claude 3.5 Haiku",
+    "created": 1730678400,
+    "created_date": "2024-11-03",
+    "context_length": 200000,
+    "pricing": {
+      "prompt": "0.0000008",
+      "completion": "0.000004",
+      "prompt_per_million": 0.7999999999999999,
+      "completion_per_million": 4.0
+    },
+    "description": "Claude 3.5 Haiku features offers enhanced capabilities in speed, coding accuracy, and tool use. Engineered to excel in real-time applications, it delivers quick response times that are essential for dynamic...",
+    "architecture": "text+image->text",
+    "top_provider": 8192
   },
   "anthropic/claude-3.5-sonnet": {
     "name": "Anthropic: Claude 3.5 Sonnet",
