@@ -1,4 +1,19 @@
 {
+  "x-ai/grok-4.5": {
+    "name": "xAI: Grok 4.5",
+    "created": 1783523154,
+    "created_date": "2026-07-08",
+    "context_length": 500000,
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000006",
+      "prompt_per_million": 2.0,
+      "completion_per_million": 6.0
+    },
+    "description": "Grok 4.5 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM.",
+    "architecture": "text+image+file->text",
+    "top_provider": null
+  },
   "anthropic/claude-sonnet-5": {
     "name": "Anthropic: Claude Sonnet 5",
     "created": 1782843083,
@@ -20,14 +35,14 @@
     "created_date": "2026-06-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000093",
-      "completion": "0.000003",
-      "prompt_per_million": 0.9299999999999999,
-      "completion_per_million": 3.0
+      "prompt": "0.00000042",
+      "completion": "0.00000132",
+      "prompt_per_million": 0.42,
+      "completion_per_million": 1.32
     },
     "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
     "architecture": "text->text",
-    "top_provider": 32768
+    "top_provider": 128000
   },
   "anthropic/claude-fable-5": {
     "name": "Anthropic: Claude Fable 5",
@@ -185,14 +200,14 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000000098",
-      "completion": "0.000000196",
-      "prompt_per_million": 0.098,
-      "completion_per_million": 0.196
+      "prompt": "0.00000009",
+      "completion": "0.00000018",
+      "prompt_per_million": 0.09,
+      "completion_per_million": 0.18
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
-    "top_provider": null
+    "top_provider": 65536
   },
   "tencent/hy3-preview": {
     "name": "Tencent: Hy3 preview",
@@ -215,10 +230,10 @@
     "created_date": "2026-04-20",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.00000055",
-      "completion": "0.0000032",
-      "prompt_per_million": 0.55,
-      "completion_per_million": 3.1999999999999997
+      "prompt": "0.00000065",
+      "completion": "0.00000341",
+      "prompt_per_million": 0.65,
+      "completion_per_million": 3.41
     },
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
     "architecture": "text+image->text",
@@ -245,14 +260,14 @@
     "created_date": "2026-04-07",
     "context_length": 202752,
     "pricing": {
-      "prompt": "0.000000975",
-      "completion": "0.0000043",
-      "prompt_per_million": 0.975,
-      "completion_per_million": 4.300000000000001
+      "prompt": "0.000000966",
+      "completion": "0.000003036",
+      "prompt_per_million": 0.966,
+      "completion_per_million": 3.036
     },
     "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
     "architecture": "text->text",
-    "top_provider": null
+    "top_provider": 128000
   },
   "google/gemma-4-31b-it": {
     "name": "Google: Gemma 4 31B",
