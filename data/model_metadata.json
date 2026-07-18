@@ -1,4 +1,19 @@
 {
+  "thinkingmachines/inkling": {
+    "name": "Thinking Machines: Inkling",
+    "created": 1784325956,
+    "created_date": "2026-07-17",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.000001",
+      "completion": "0.00000405",
+      "prompt_per_million": 1.0,
+      "completion_per_million": 4.05
+    },
+    "description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of 975B total. It is designed for general-purpose reasoning, coding, agentic and tool-use systems,...",
+    "architecture": "text+image+audio->text",
+    "top_provider": null
+  },
   "moonshotai/kimi-k3": {
     "name": "MoonshotAI: Kimi K3",
     "created": 1784215858,
@@ -10,7 +25,7 @@
       "prompt_per_million": 3.0,
       "completion_per_million": 15.0
     },
-    "description": "Kimi K3 is an ultra-large-scale, open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at navigating...",
+    "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at...",
     "architecture": "text+image->text",
     "top_provider": null
   },
@@ -155,10 +170,10 @@
     "created_date": "2026-06-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.0000009198",
-      "completion": "0.0000028908",
-      "prompt_per_million": 0.9198,
-      "completion_per_million": 2.8908
+      "prompt": "0.000000343",
+      "completion": "0.000001078",
+      "prompt_per_million": 0.34299999999999997,
+      "completion_per_million": 1.078
     },
     "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
     "architecture": "text->text",
@@ -425,10 +440,10 @@
     "created_date": "2026-03-18",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.0000003",
-      "completion": "0.0000012",
-      "prompt_per_million": 0.3,
-      "completion_per_million": 1.2
+      "prompt": "0.00000025",
+      "completion": "0.000001",
+      "prompt_per_million": 0.25,
+      "completion_per_million": 1.0
     },
     "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent...",
     "architecture": "text->text",
