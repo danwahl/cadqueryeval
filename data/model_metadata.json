@@ -1,9 +1,39 @@
 {
+  "google/gemini-3.6-flash": {
+    "name": "Google: Gemini 3.6 Flash",
+    "created": 1784646733,
+    "created_date": "2026-07-21",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.0000015",
+      "completion": "0.0000075",
+      "prompt_per_million": 1.5,
+      "completion_per_million": 7.5
+    },
+    "description": "Gemini 3.6 Flash is a high-efficiency model from Google for coding, agentic workflows, and web and app development. It is designed to produce polished outputs with fewer unnecessary edits and...",
+    "architecture": "text+image+file+audio+video->text",
+    "top_provider": 65536
+  },
+  "google/gemini-3.5-flash-lite": {
+    "name": "Google: Gemini 3.5 Flash-Lite",
+    "created": 1784646726,
+    "created_date": "2026-07-21",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.0000003",
+      "completion": "0.0000025",
+      "prompt_per_million": 0.3,
+      "completion_per_million": 2.5
+    },
+    "description": "Gemini 3.5 Flash-Lite is a high-efficiency model from Google with upgraded agentic capabilities. It is suited for subagents that execute focused tasks within complex, multi-agent workflows.",
+    "architecture": "text+image+file+audio+video->text",
+    "top_provider": 65536
+  },
   "thinkingmachines/inkling": {
     "name": "Thinking Machines: Inkling",
     "created": 1784325956,
     "created_date": "2026-07-17",
-    "context_length": 1048576,
+    "context_length": 524288,
     "pricing": {
       "prompt": "0.000001",
       "completion": "0.00000405",
@@ -170,10 +200,10 @@
     "created_date": "2026-06-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000000343",
-      "completion": "0.000001078",
-      "prompt_per_million": 0.34299999999999997,
-      "completion_per_million": 1.078
+      "prompt": "0.0000008246",
+      "completion": "0.0000025916",
+      "prompt_per_million": 0.8246,
+      "completion_per_million": 2.5915999999999997
     },
     "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
     "architecture": "text->text",
@@ -335,10 +365,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000000098",
-      "completion": "0.000000196",
-      "prompt_per_million": 0.098,
-      "completion_per_million": 0.196
+      "prompt": "0.0000000938",
+      "completion": "0.0000001876",
+      "prompt_per_million": 0.09380000000000001,
+      "completion_per_million": 0.18760000000000002
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
@@ -365,14 +395,14 @@
     "created_date": "2026-04-20",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.00000095",
-      "completion": "0.000004",
-      "prompt_per_million": 0.95,
-      "completion_per_million": 4.0
+      "prompt": "0.000000684",
+      "completion": "0.00000342",
+      "prompt_per_million": 0.684,
+      "completion_per_million": 3.42
     },
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
     "architecture": "text+image->text",
-    "top_provider": null
+    "top_provider": 262144
   },
   "anthropic/claude-opus-4.7": {
     "name": "Anthropic: Claude Opus 4.7",
@@ -393,7 +423,7 @@
     "name": "Z.ai: GLM 5.1",
     "created": 1775578025,
     "created_date": "2026-04-07",
-    "context_length": 202752,
+    "context_length": 204800,
     "pricing": {
       "prompt": "0.000000966",
       "completion": "0.000003036",
@@ -410,14 +440,14 @@
     "created_date": "2026-04-02",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.00000022",
-      "completion": "0.00000055",
-      "prompt_per_million": 0.22,
-      "completion_per_million": 0.55
+      "prompt": "0.00000012",
+      "completion": "0.00000037",
+      "prompt_per_million": 0.12,
+      "completion_per_million": 0.37
     },
     "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
     "architecture": "text+image+video->text",
-    "top_provider": 262144
+    "top_provider": 16384
   },
   "qwen/qwen3.6-plus": {
     "name": "Qwen: Qwen3.6 Plus",
