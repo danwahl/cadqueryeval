@@ -1,4 +1,19 @@
 {
+  "anthropic/claude-opus-5": {
+    "name": "Claude Opus 5",
+    "created": 1784912544,
+    "created_date": "2026-07-24",
+    "context_length": 1000000,
+    "pricing": {
+      "prompt": "0.000005",
+      "completion": "0.000025",
+      "prompt_per_million": 5.0,
+      "completion_per_million": 25.0
+    },
+    "description": "Claude Opus 5 is Anthropic\u2019s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual analysis...",
+    "architecture": "text+image+file->text",
+    "top_provider": 128000
+  },
   "google/gemini-3.6-flash": {
     "name": "Google: Gemini 3.6 Flash",
     "created": 1784646733,
@@ -15,7 +30,7 @@
     "top_provider": 65536
   },
   "google/gemini-3.5-flash-lite": {
-    "name": "Google: Gemini 3.5 Flash-Lite",
+    "name": "Google: Gemini 3.5 Flash Lite",
     "created": 1784646726,
     "created_date": "2026-07-21",
     "context_length": 1048576,
@@ -25,7 +40,7 @@
       "prompt_per_million": 0.3,
       "completion_per_million": 2.5
     },
-    "description": "Gemini 3.5 Flash-Lite is a high-efficiency model from Google with upgraded agentic capabilities. It is suited for subagents that execute focused tasks within complex, multi-agent workflows.",
+    "description": "Gemini 3.5 Flash Lite is a high-efficiency model from Google with upgraded agentic capabilities. It is suited for subagents that execute focused tasks within complex, multi-agent workflows.",
     "architecture": "text+image+file+audio+video->text",
     "top_provider": 65536
   },
@@ -33,7 +48,7 @@
     "name": "Thinking Machines: Inkling",
     "created": 1784325956,
     "created_date": "2026-07-17",
-    "context_length": 524288,
+    "context_length": 1048576,
     "pricing": {
       "prompt": "0.000001",
       "completion": "0.00000405",
@@ -200,10 +215,10 @@
     "created_date": "2026-06-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.0000008246",
-      "completion": "0.0000025916",
-      "prompt_per_million": 0.8246,
-      "completion_per_million": 2.5915999999999997
+      "prompt": "0.0000008218",
+      "completion": "0.0000025828",
+      "prompt_per_million": 0.8218,
+      "completion_per_million": 2.5828
     },
     "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
     "architecture": "text->text",
@@ -440,14 +455,14 @@
     "created_date": "2026-04-02",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.00000012",
-      "completion": "0.00000037",
-      "prompt_per_million": 0.12,
-      "completion_per_million": 0.37
+      "prompt": "0.00000014",
+      "completion": "0.0000004",
+      "prompt_per_million": 0.14,
+      "completion_per_million": 0.39999999999999997
     },
     "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
     "architecture": "text+image+video->text",
-    "top_provider": 16384
+    "top_provider": 262144
   },
   "qwen/qwen3.6-plus": {
     "name": "Qwen: Qwen3.6 Plus",
