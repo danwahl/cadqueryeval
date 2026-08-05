@@ -1,4 +1,19 @@
 {
+  "meta/muse-spark-1.2": {
+    "name": "Meta: Muse Spark 1.2",
+    "created": 1785959287,
+    "created_date": "2026-08-05",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.00000125",
+      "completion": "0.00000425",
+      "prompt_per_million": 1.25,
+      "completion_per_million": 4.25
+    },
+    "description": "Muse Spark 1.2 is a reasoning model from Meta, designed for complex agentic tasks. It accepts text, images, video, audio, and PDF documents, returns text, and offers a 1M-token context...",
+    "architecture": "text+image+file+audio+video->text",
+    "top_provider": null
+  },
   "qwen/qwen3.8-max": {
     "name": "Qwen: Qwen3.8 Max",
     "created": 1785731612,
@@ -225,7 +240,7 @@
     "top_provider": 128000
   },
   "x-ai/grok-4.5": {
-    "name": "xAI: Grok 4.5",
+    "name": "SpaceXAI: Grok 4.5",
     "created": 1783523154,
     "created_date": "2026-07-08",
     "context_length": 500000,
@@ -260,14 +275,14 @@
     "created_date": "2026-06-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.0000006286",
-      "completion": "0.0000019756",
-      "prompt_per_million": 0.6286,
-      "completion_per_million": 1.9756000000000002
+      "prompt": "0.00000076",
+      "completion": "0.00000242",
+      "prompt_per_million": 0.76,
+      "completion_per_million": 2.42
     },
     "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
     "architecture": "text->text",
-    "top_provider": 131072
+    "top_provider": 262144
   },
   "anthropic/claude-fable-5": {
     "name": "Anthropic: Claude Fable 5",
@@ -375,7 +390,7 @@
     "top_provider": 65536
   },
   "x-ai/grok-4.3": {
-    "name": "xAI: Grok 4.3",
+    "name": "SpaceXAI: Grok 4.3",
     "created": 1777591821,
     "created_date": "2026-04-30",
     "context_length": 1000000,
@@ -385,7 +400,7 @@
       "prompt_per_million": 1.25,
       "completion_per_million": 2.5
     },
-    "description": "Grok 4.3 is a reasoning model from xAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
+    "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
     "architecture": "text+image+file->text",
     "top_provider": null
   },
@@ -420,7 +435,7 @@
     "top_provider": 384000
   },
   "deepseek/deepseek-v4-flash": {
-    "name": "DeepSeek: DeepSeek V4 Flash",
+    "name": "DeepSeek: DeepSeek V4 Flash 0423",
     "created": 1777000666,
     "created_date": "2026-04-23",
     "context_length": 1048576,
@@ -455,10 +470,10 @@
     "created_date": "2026-04-20",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.0000006",
-      "completion": "0.00000341",
-      "prompt_per_million": 0.6,
-      "completion_per_million": 3.41
+      "prompt": "0.000000589",
+      "completion": "0.00000248",
+      "prompt_per_million": 0.589,
+      "completion_per_million": 2.48
     },
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
     "architecture": "text+image->text",
@@ -485,14 +500,14 @@
     "created_date": "2026-04-07",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.000000966",
-      "completion": "0.000003036",
-      "prompt_per_million": 0.966,
-      "completion_per_million": 3.036
+      "prompt": "0.000000952",
+      "completion": "0.000002992",
+      "prompt_per_million": 0.952,
+      "completion_per_million": 2.992
     },
     "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
     "architecture": "text->text",
-    "top_provider": 128000
+    "top_provider": 131072
   },
   "google/gemma-4-31b-it": {
     "name": "Google: Gemma 4 31B",
@@ -530,10 +545,10 @@
     "created_date": "2026-03-18",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.00000025",
-      "completion": "0.000001",
-      "prompt_per_million": 0.25,
-      "completion_per_million": 1.0
+      "prompt": "0.00000027",
+      "completion": "0.00000108",
+      "prompt_per_million": 0.27,
+      "completion_per_million": 1.08
     },
     "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent...",
     "architecture": "text->text",
@@ -590,9 +605,9 @@
     "created_date": "2026-02-12",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.00000015",
+      "prompt": "0.00000022",
       "completion": "0.0000009",
-      "prompt_per_million": 0.15,
+      "prompt_per_million": 0.22,
       "completion_per_million": 0.8999999999999999
     },
     "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1...",
