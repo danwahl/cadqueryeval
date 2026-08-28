@@ -1,4 +1,19 @@
 {
+  "z-ai/glm-5.3-flash": {
+    "name": "Z.ai: GLM 5.3 Flash",
+    "created": 1787752741,
+    "created_date": "2026-08-26",
+    "context_length": 1310720,
+    "pricing": {
+      "prompt": "0.000000075",
+      "completion": "0.00000025",
+      "prompt_per_million": 0.075,
+      "completion_per_million": 0.25
+    },
+    "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
+    "architecture": "text+image+video->text",
+    "top_provider": 131072
+  },
   "google/gemini-3.7-flash": {
     "name": "Google: Gemini 3.7 Flash",
     "created": 1786640581,
@@ -18,7 +33,7 @@
     "name": "NVIDIA: Nemotron 3.5 Lightning",
     "created": 1786452751,
     "created_date": "2026-08-11",
-    "context_length": 1000000,
+    "context_length": 262144,
     "pricing": {
       "prompt": "0.0000001",
       "completion": "0.00000025",
@@ -27,7 +42,7 @@
     },
     "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
     "architecture": "text->text",
-    "top_provider": 262144
+    "top_provider": 235929
   },
   "meta/muse-spark-1.2": {
     "name": "Meta: Muse Spark 1.2",
@@ -42,7 +57,7 @@
     },
     "description": "Muse Spark 1.2 is a reasoning model from Meta, designed for complex agentic tasks. It accepts text, images, video, audio, and PDF documents, returns text, and offers a 1M-token context...",
     "architecture": "text+image+file+audio+video->text",
-    "top_provider": null
+    "top_provider": 943718
   },
   "qwen/qwen3.8-max": {
     "name": "Qwen: Qwen3.8 Max",
@@ -63,16 +78,16 @@
     "name": "DeepSeek: DeepSeek V4 Flash 0731",
     "created": 1785478908,
     "created_date": "2026-07-31",
-    "context_length": 1048576,
+    "context_length": 1310720,
     "pricing": {
-      "prompt": "0.00000014",
-      "completion": "0.00000028",
-      "prompt_per_million": 0.14,
-      "completion_per_million": 0.28
+      "prompt": "0.00000006",
+      "completion": "0.00000012",
+      "prompt_per_million": 0.06,
+      "completion_per_million": 0.12
     },
     "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows....",
     "architecture": "text->text",
-    "top_provider": 393216
+    "top_provider": 943718
   },
   "qwen/qwen3.7-flash": {
     "name": "Qwen: Qwen3.7 Flash",
@@ -162,7 +177,7 @@
     },
     "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at...",
     "architecture": "text+image+video->text",
-    "top_provider": null
+    "top_provider": 943718
   },
   "meta/muse-spark-1.1": {
     "name": "Meta: Muse Spark 1.1",
@@ -177,7 +192,7 @@
     },
     "description": "Muse Spark 1.1 is a multimodal reasoning model from Meta, built for agentic tasks. It accepts text, images, video, audio, and PDF documents and returns text, with a 1M-token context...",
     "architecture": "text+image+file+audio+video->text",
-    "top_provider": null
+    "top_provider": 943718
   },
   "openai/gpt-5.6-luna-pro": {
     "name": "OpenAI: GPT-5.6 Luna Pro",
@@ -185,10 +200,10 @@
     "created_date": "2026-07-09",
     "context_length": 1050000,
     "pricing": {
-      "prompt": "0.0000001",
-      "completion": "0.0000006",
-      "prompt_per_million": 0.09999999999999999,
-      "completion_per_million": 0.6
+      "prompt": "0.0000002",
+      "completion": "0.0000012",
+      "prompt_per_million": 0.19999999999999998,
+      "completion_per_million": 1.2
     },
     "description": "GPT-5.6 Luna Pro is the same underlying model as [GPT-5.6 Luna](https://openrouter.ai/openai/gpt-5.6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
     "architecture": "text+image+file->text",
@@ -200,10 +215,10 @@
     "created_date": "2026-07-09",
     "context_length": 1050000,
     "pricing": {
-      "prompt": "0.0000001",
-      "completion": "0.0000006",
-      "prompt_per_million": 0.09999999999999999,
-      "completion_per_million": 0.6
+      "prompt": "0.0000002",
+      "completion": "0.0000012",
+      "prompt_per_million": 0.19999999999999998,
+      "completion_per_million": 1.2
     },
     "description": "GPT-5.6 Luna is a fast, cost-efficient model in OpenAI's GPT-5.6 series. It is suited for high-volume, latency-sensitive tasks such as chat, classification, and lightweight agentic workflows, providing capable reasoning for...",
     "architecture": "text+image+file->text",
@@ -215,10 +230,10 @@
     "created_date": "2026-07-09",
     "context_length": 1050000,
     "pricing": {
-      "prompt": "0.000001",
-      "completion": "0.000006",
-      "prompt_per_million": 1.0,
-      "completion_per_million": 6.0
+      "prompt": "0.000002",
+      "completion": "0.000012",
+      "prompt_per_million": 2.0,
+      "completion_per_million": 12.0
     },
     "description": "GPT-5.6 Terra Pro is the same underlying model as [GPT-5.6 Terra](https://openrouter.ai/openai/gpt-5.6-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
     "architecture": "text+image+file->text",
@@ -230,10 +245,10 @@
     "created_date": "2026-07-09",
     "context_length": 1050000,
     "pricing": {
-      "prompt": "0.000001",
-      "completion": "0.000006",
-      "prompt_per_million": 1.0,
-      "completion_per_million": 6.0
+      "prompt": "0.000002",
+      "completion": "0.000012",
+      "prompt_per_million": 2.0,
+      "completion_per_million": 12.0
     },
     "description": "GPT-5.6 Terra is a balanced model in OpenAI's GPT-5.6 series, positioned between the flagship Sol tier and the cost-efficient Luna tier. It is suited for everyday coding, reasoning, and agentic...",
     "architecture": "text+image+file->text",
@@ -245,10 +260,10 @@
     "created_date": "2026-07-09",
     "context_length": 1050000,
     "pricing": {
-      "prompt": "0.000005",
-      "completion": "0.00003",
-      "prompt_per_million": 5.0,
-      "completion_per_million": 30.0
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "prompt_per_million": 2.0,
+      "completion_per_million": 10.0
     },
     "description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
     "architecture": "text+image+file->text",
@@ -260,10 +275,10 @@
     "created_date": "2026-07-09",
     "context_length": 1050000,
     "pricing": {
-      "prompt": "0.000005",
-      "completion": "0.00003",
-      "prompt_per_million": 5.0,
-      "completion_per_million": 30.0
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "prompt_per_million": 2.0,
+      "completion_per_million": 10.0
     },
     "description": "GPT-5.6 Sol is the flagship model in OpenAI's GPT-5.6 series. It is suited for complex reasoning, coding, and agentic workflows, and is particularly strong at command-line and multi-step coding tasks...",
     "architecture": "text+image+file->text",
@@ -282,7 +297,7 @@
     },
     "description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM.",
     "architecture": "text+image+file->text",
-    "top_provider": null
+    "top_provider": 450000
   },
   "anthropic/claude-sonnet-5": {
     "name": "Anthropic: Claude Sonnet 5",
@@ -305,14 +320,14 @@
     "created_date": "2026-06-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000063",
-      "completion": "0.00000198",
-      "prompt_per_million": 0.63,
-      "completion_per_million": 1.9800000000000002
+      "prompt": "0.00000119",
+      "completion": "0.00000374",
+      "prompt_per_million": 1.19,
+      "completion_per_million": 3.74
     },
     "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
     "architecture": "text->text",
-    "top_provider": null
+    "top_provider": 262144
   },
   "anthropic/claude-fable-5": {
     "name": "Anthropic: Claude Fable 5",
@@ -432,7 +447,7 @@
     },
     "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
     "architecture": "text+image+file->text",
-    "top_provider": null
+    "top_provider": 900000
   },
   "openai/gpt-5.5": {
     "name": "OpenAI: GPT-5.5",
@@ -450,19 +465,19 @@
     "top_provider": 128000
   },
   "deepseek/deepseek-v4-pro": {
-    "name": "DeepSeek: DeepSeek V4 Pro",
+    "name": "DeepSeek: DeepSeek V4 Pro 0423",
     "created": 1777000679,
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000001168",
-      "completion": "0.000002336",
-      "prompt_per_million": 1.1680000000000001,
-      "completion_per_million": 2.3360000000000003
+      "prompt": "0.00000087",
+      "completion": "0.00000174",
+      "prompt_per_million": 0.87,
+      "completion_per_million": 1.74
     },
     "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
     "architecture": "text->text",
-    "top_provider": 393216
+    "top_provider": 384000
   },
   "deepseek/deepseek-v4-flash": {
     "name": "DeepSeek: DeepSeek V4 Flash 0423",
@@ -470,14 +485,14 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000014",
-      "completion": "0.00000028",
-      "prompt_per_million": 0.14,
-      "completion_per_million": 0.28
+      "prompt": "0.000000088606",
+      "completion": "0.000000177212",
+      "prompt_per_million": 0.088606,
+      "completion_per_million": 0.177212
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
-    "top_provider": 393216
+    "top_provider": 384000
   },
   "tencent/hy3-preview": {
     "name": "Tencent: Hy3 preview",
@@ -485,14 +500,14 @@
     "created_date": "2026-04-22",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.000000063",
-      "completion": "0.00000021",
-      "prompt_per_million": 0.063,
-      "completion_per_million": 0.21
+      "prompt": "0.00000018",
+      "completion": "0.0000006",
+      "prompt_per_million": 0.18,
+      "completion_per_million": 0.6
     },
     "description": "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
     "architecture": "text->text",
-    "top_provider": null
+    "top_provider": 235929
   },
   "moonshotai/kimi-k2.6": {
     "name": "MoonshotAI: Kimi K2.6",
@@ -507,7 +522,7 @@
     },
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
     "architecture": "text+image->text",
-    "top_provider": 262144
+    "top_provider": 235929
   },
   "anthropic/claude-opus-4.7": {
     "name": "Anthropic: Claude Opus 4.7",
@@ -530,14 +545,14 @@
     "created_date": "2026-04-07",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.0000014",
-      "completion": "0.0000044",
-      "prompt_per_million": 1.4,
-      "completion_per_million": 4.4
+      "prompt": "0.00000126",
+      "completion": "0.00000396",
+      "prompt_per_million": 1.26,
+      "completion_per_million": 3.9600000000000004
     },
     "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
     "architecture": "text->text",
-    "top_provider": 131072
+    "top_provider": 182476
   },
   "google/gemma-4-31b-it": {
     "name": "Google: Gemma 4 31B",
@@ -545,14 +560,14 @@
     "created_date": "2026-04-02",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.0000001",
+      "prompt": "0.00000009",
       "completion": "0.00000034",
-      "prompt_per_million": 0.09999999999999999,
+      "prompt_per_million": 0.09,
       "completion_per_million": 0.33999999999999997
     },
     "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
     "architecture": "text+image+video->text",
-    "top_provider": 262144
+    "top_provider": 16384
   },
   "qwen/qwen3.6-plus": {
     "name": "Qwen: Qwen3.6 Plus",
@@ -635,14 +650,14 @@
     "created_date": "2026-02-12",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.00000022",
-      "completion": "0.0000009",
-      "prompt_per_million": 0.22,
-      "completion_per_million": 0.8999999999999999
+      "prompt": "0.00000027",
+      "completion": "0.00000108",
+      "prompt_per_million": 0.27,
+      "completion_per_million": 1.08
     },
     "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1...",
     "architecture": "text->text",
-    "top_provider": 196608
+    "top_provider": 128000
   },
   "anthropic/claude-opus-4.6": {
     "name": "Anthropic: Claude Opus 4.6",
@@ -665,14 +680,14 @@
     "created_date": "2026-01-26",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.00000057",
-      "completion": "0.00000285",
-      "prompt_per_million": 0.5700000000000001,
-      "completion_per_million": 2.8499999999999996
+      "prompt": "0.0000006",
+      "completion": "0.000003",
+      "prompt_per_million": 0.6,
+      "completion_per_million": 3.0
     },
     "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
     "architecture": "text+image->text",
-    "top_provider": 262144
+    "top_provider": 235929
   },
   "google/gemini-3-flash-preview": {
     "name": "Google: Gemini 3 Flash Preview",
@@ -710,14 +725,14 @@
     "created_date": "2025-12-01",
     "context_length": 163840,
     "pricing": {
-      "prompt": "0.000000269",
-      "completion": "0.0000004",
-      "prompt_per_million": 0.26899999999999996,
-      "completion_per_million": 0.39999999999999997
+      "prompt": "0.00000026",
+      "completion": "0.00000038",
+      "prompt_per_million": 0.26,
+      "completion_per_million": 0.38
     },
     "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
     "architecture": "text->text",
-    "top_provider": 65536
+    "top_provider": 147456
   },
   "anthropic/claude-opus-4.5": {
     "name": "Anthropic: Claude Opus 4.5",
