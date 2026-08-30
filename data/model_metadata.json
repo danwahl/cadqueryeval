@@ -1,4 +1,19 @@
 {
+  "tencent/hy4-preview": {
+    "name": "Tencent: Hy4 preview",
+    "created": 1787897375,
+    "created_date": "2026-08-28",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.000000834",
+      "completion": "0.000002501",
+      "prompt_per_million": 0.834,
+      "completion_per_million": 2.501
+    },
+    "description": "Tencent: Hy4 preview is a mixture-of-experts model from Tencent, with 49B active parameters out of 770B total. It is designed for coding agents, complex tool-use workflows, and productivity tasks that...",
+    "architecture": "text->text",
+    "top_provider": 64000
+  },
   "qwen/qwen3.8-flash": {
     "name": "Qwen: Qwen3.8 Flash",
     "created": 1787773060,
@@ -33,7 +48,7 @@
     "name": "Z.ai: GLM 5.3",
     "created": 1787086655,
     "created_date": "2026-08-18",
-    "context_length": 1048576,
+    "context_length": 1310720,
     "pricing": {
       "prompt": "0.0000014",
       "completion": "0.0000044",
@@ -50,10 +65,10 @@
     "created_date": "2026-08-13",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000000375",
-      "completion": "0.000001875",
-      "prompt_per_million": 0.375,
-      "completion_per_million": 1.875
+      "prompt": "0.00000075",
+      "completion": "0.00000375",
+      "prompt_per_million": 0.75,
+      "completion_per_million": 3.75
     },
     "description": "Gemini 3.7 Flash is a multimodal model from Google for fast agentic workflows, coding, and complex multi-step reasoning. It is designed for tasks that require responsive performance and reliable multi-step...",
     "architecture": "text+image+file+audio+video->text",
@@ -80,14 +95,14 @@
     "created_date": "2026-08-11",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.0000001",
-      "completion": "0.00000025",
-      "prompt_per_million": 0.09999999999999999,
-      "completion_per_million": 0.25
+      "prompt": "0.00000008",
+      "completion": "0.0000002",
+      "prompt_per_million": 0.08,
+      "completion_per_million": 0.19999999999999998
     },
     "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
     "architecture": "text->text",
-    "top_provider": 235929
+    "top_provider": 131072
   },
   "upstage/solar-pro4": {
     "name": "Upstage: Solar Pro 4",
@@ -140,10 +155,10 @@
     "created_date": "2026-07-31",
     "context_length": 1310720,
     "pricing": {
-      "prompt": "0.00000006",
-      "completion": "0.00000012",
-      "prompt_per_million": 0.06,
-      "completion_per_million": 0.12
+      "prompt": "0.000000065",
+      "completion": "0.00000018",
+      "prompt_per_million": 0.065,
+      "completion_per_million": 0.18
     },
     "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows....",
     "architecture": "text->text",
@@ -530,10 +545,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000087",
-      "completion": "0.00000174",
-      "prompt_per_million": 0.87,
-      "completion_per_million": 1.74
+      "prompt": "0.000000538878",
+      "completion": "0.000001077756",
+      "prompt_per_million": 0.538878,
+      "completion_per_million": 1.077756
     },
     "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
     "architecture": "text->text",
@@ -545,10 +560,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000000088606",
-      "completion": "0.000000177212",
-      "prompt_per_million": 0.088606,
-      "completion_per_million": 0.177212
+      "prompt": "0.00000008176",
+      "completion": "0.00000016352",
+      "prompt_per_million": 0.08176,
+      "completion_per_million": 0.16352
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
@@ -785,14 +800,14 @@
     "created_date": "2025-12-01",
     "context_length": 163840,
     "pricing": {
-      "prompt": "0.00000026",
-      "completion": "0.00000038",
-      "prompt_per_million": 0.26,
-      "completion_per_million": 0.38
+      "prompt": "0.000000269",
+      "completion": "0.0000004",
+      "prompt_per_million": 0.26899999999999996,
+      "completion_per_million": 0.39999999999999997
     },
     "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
     "architecture": "text->text",
-    "top_provider": 147456
+    "top_provider": 65536
   },
   "anthropic/claude-opus-4.5": {
     "name": "Anthropic: Claude Opus 4.5",
