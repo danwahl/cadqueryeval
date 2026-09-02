@@ -1,4 +1,19 @@
 {
+  "anthropic/claude-fable-5.1": {
+    "name": "Anthropic: Claude Fable 5.1",
+    "created": 1788285838,
+    "created_date": "2026-09-01",
+    "context_length": 1000000,
+    "pricing": {
+      "prompt": "0.00001",
+      "completion": "0.00005",
+      "prompt_per_million": 10.0,
+      "completion_per_million": 50.0
+    },
+    "description": "Claude Fable 5.1 improves on Claude Fable 5 across the board, with the biggest gains in agentic coding, long-running agentic workflows, and knowledge work: long code refactors, front-end and visual...",
+    "architecture": "text+image+file->text",
+    "top_provider": 128000
+  },
   "tencent/hy4-preview": {
     "name": "Tencent: Hy4 preview",
     "created": 1787897375,
@@ -230,14 +245,14 @@
     "created_date": "2026-07-17",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000095",
+      "prompt": "0.000001",
       "completion": "0.00000405",
-      "prompt_per_million": 0.95,
+      "prompt_per_million": 1.0,
       "completion_per_million": 4.05
     },
     "description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of 975B total. It is designed for general-purpose reasoning, coding, agentic and tool-use systems,...",
     "architecture": "text+image+audio->text",
-    "top_provider": 262144
+    "top_provider": 471859
   },
   "moonshotai/kimi-k3": {
     "name": "MoonshotAI: Kimi K3",
@@ -545,10 +560,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000000538878",
-      "completion": "0.000001077756",
-      "prompt_per_million": 0.538878,
-      "completion_per_million": 1.077756
+      "prompt": "0.00000102747",
+      "completion": "0.00000205494",
+      "prompt_per_million": 1.0274699999999999,
+      "completion_per_million": 2.0549399999999998
     },
     "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
     "architecture": "text->text",
@@ -560,10 +575,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000008176",
-      "completion": "0.00000016352",
-      "prompt_per_million": 0.08176,
-      "completion_per_million": 0.16352
+      "prompt": "0.00000007168",
+      "completion": "0.00000014336",
+      "prompt_per_million": 0.07168000000000001,
+      "completion_per_million": 0.14336000000000002
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
@@ -620,14 +635,14 @@
     "created_date": "2026-04-07",
     "context_length": 204800,
     "pricing": {
-      "prompt": "0.00000126",
-      "completion": "0.00000396",
-      "prompt_per_million": 1.26,
-      "completion_per_million": 3.9600000000000004
+      "prompt": "0.000000966",
+      "completion": "0.000003036",
+      "prompt_per_million": 0.966,
+      "completion_per_million": 3.036
     },
     "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
     "architecture": "text->text",
-    "top_provider": 182476
+    "top_provider": 128000
   },
   "google/gemma-4-31b-it": {
     "name": "Google: Gemma 4 31B",
@@ -755,10 +770,10 @@
     "created_date": "2026-01-26",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.0000006",
-      "completion": "0.000003",
-      "prompt_per_million": 0.6,
-      "completion_per_million": 3.0
+      "prompt": "0.00000045",
+      "completion": "0.00000225",
+      "prompt_per_million": 0.44999999999999996,
+      "completion_per_million": 2.25
     },
     "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
     "architecture": "text+image->text",
