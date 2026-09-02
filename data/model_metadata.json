@@ -1,4 +1,19 @@
 {
+  "google/gemini-3.8-flash": {
+    "name": "Google: Gemini 3.8 Flash",
+    "created": 1788362056,
+    "created_date": "2026-09-02",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.00000075",
+      "completion": "0.00000375",
+      "prompt_per_million": 0.75,
+      "completion_per_million": 3.75
+    },
+    "description": "Gemini 3.8 Flash is Google's most intelligent Flash model with significant gains from 3.7 Flash across software engineering, agentic tasks, and multi-step reasoning.",
+    "architecture": "text+image+file+audio+video->text",
+    "top_provider": 65536
+  },
   "anthropic/claude-fable-5.1": {
     "name": "Anthropic: Claude Fable 5.1",
     "created": 1788285838,
@@ -410,14 +425,14 @@
     "created_date": "2026-06-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000119",
-      "completion": "0.00000374",
-      "prompt_per_million": 1.19,
-      "completion_per_million": 3.74
+      "prompt": "0.000000966",
+      "completion": "0.000003036",
+      "prompt_per_million": 0.966,
+      "completion_per_million": 3.036
     },
     "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
     "architecture": "text->text",
-    "top_provider": 262144
+    "top_provider": 131072
   },
   "anthropic/claude-fable-5": {
     "name": "Anthropic: Claude Fable 5",
@@ -560,10 +575,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000102747",
-      "completion": "0.00000205494",
-      "prompt_per_million": 1.0274699999999999,
-      "completion_per_million": 2.0549399999999998
+      "prompt": "0.000001034256",
+      "completion": "0.000002068512",
+      "prompt_per_million": 1.034256,
+      "completion_per_million": 2.068512
     },
     "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
     "architecture": "text->text",
@@ -575,10 +590,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000007168",
-      "completion": "0.00000014336",
-      "prompt_per_million": 0.07168000000000001,
-      "completion_per_million": 0.14336000000000002
+      "prompt": "0.00000008554",
+      "completion": "0.00000017108",
+      "prompt_per_million": 0.08553999999999999,
+      "completion_per_million": 0.17107999999999998
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
