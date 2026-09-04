@@ -1,4 +1,19 @@
 {
+  "openai/gpt-6-astra": {
+    "name": "OpenAI: GPT-6 Astra",
+    "created": 1788552838,
+    "created_date": "2026-09-04",
+    "context_length": 1050000,
+    "pricing": {
+      "prompt": "0.00001",
+      "completion": "0.00005",
+      "prompt_per_million": 10.0,
+      "completion_per_million": 50.0
+    },
+    "description": "GPT-6 Astra is OpenAI's flagship model for demanding end-to-end work. It is suited for advanced analysis, software engineering, deep research, scientific work, and document creation, with particular strengths in long-horizon...",
+    "architecture": "text+image+file->text",
+    "top_provider": 128000
+  },
   "meta/muse-spark-1.3": {
     "name": "Meta: Muse Spark 1.3",
     "created": 1788378359,
@@ -590,10 +605,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000001035996",
-      "completion": "0.000002071992",
-      "prompt_per_million": 1.035996,
-      "completion_per_million": 2.071992
+      "prompt": "0.000000981708",
+      "completion": "0.000001963416",
+      "prompt_per_million": 0.981708,
+      "completion_per_million": 1.963416
     },
     "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
     "architecture": "text->text",
@@ -605,10 +620,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000000084",
-      "completion": "0.000000168",
-      "prompt_per_million": 0.08399999999999999,
-      "completion_per_million": 0.16799999999999998
+      "prompt": "0.00000008778",
+      "completion": "0.00000017556",
+      "prompt_per_million": 0.08778,
+      "completion_per_million": 0.17556
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
