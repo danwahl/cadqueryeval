@@ -1,4 +1,19 @@
 {
+  "deepseek/deepseek-v4.1-flash": {
+    "name": "DeepSeek: DeepSeek V4.1 Flash",
+    "created": 1789021285,
+    "created_date": "2026-09-10",
+    "context_length": 1048576,
+    "pricing": {
+      "prompt": "0.00000015",
+      "completion": "0.0000006",
+      "prompt_per_million": 0.15,
+      "completion_per_million": 0.6
+    },
+    "description": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the first built on the company's Causal Encoder-Decoder (CED) architecture. It activates 8B parameters on input and 16B on...",
+    "architecture": "text+image->text",
+    "top_provider": 384000
+  },
   "openai/gpt-6-astra": {
     "name": "OpenAI: GPT-6 Astra",
     "created": 1788552838,
@@ -95,10 +110,10 @@
     "created_date": "2026-08-26",
     "context_length": 1310720,
     "pricing": {
-      "prompt": "0.000000075",
-      "completion": "0.00000025",
-      "prompt_per_million": 0.075,
-      "completion_per_million": 0.25
+      "prompt": "0.00000015",
+      "completion": "0.0000005",
+      "prompt_per_million": 0.15,
+      "completion_per_million": 0.5
     },
     "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
     "architecture": "text+image+video->text",
@@ -110,14 +125,14 @@
     "created_date": "2026-08-18",
     "context_length": 1310720,
     "pricing": {
-      "prompt": "0.0000014",
-      "completion": "0.0000044",
-      "prompt_per_million": 1.4,
-      "completion_per_million": 4.4
+      "prompt": "0.000001092",
+      "completion": "0.000003432",
+      "prompt_per_million": 1.092,
+      "completion_per_million": 3.432
     },
     "description": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves...",
     "architecture": "text->text",
-    "top_provider": 262144
+    "top_provider": 131072
   },
   "google/gemini-3.7-flash": {
     "name": "Google: Gemini 3.7 Flash",
@@ -170,10 +185,10 @@
     "created_date": "2026-08-10",
     "context_length": 524288,
     "pricing": {
-      "prompt": "0.00000003",
-      "completion": "0.00000012",
-      "prompt_per_million": 0.03,
-      "completion_per_million": 0.12
+      "prompt": "0.00000009",
+      "completion": "0.00000036",
+      "prompt_per_million": 0.09,
+      "completion_per_million": 0.36
     },
     "description": "Solar Pro 4 is Upstage's cost-efficient large language model, featuring a 524K context window. It is built for long-horizon tasks and agentic workflows, with strong capabilities in office productivity, document-intensive...",
     "architecture": "text->text",
@@ -194,31 +209,16 @@
     "architecture": "text+image+file+audio+video->text",
     "top_provider": 943718
   },
-  "qwen/qwen3.8-max": {
-    "name": "Qwen: Qwen3.8 Max",
-    "created": 1785731612,
-    "created_date": "2026-08-02",
-    "context_length": 1000000,
-    "pricing": {
-      "prompt": "0.000002",
-      "completion": "0.000006",
-      "prompt_per_million": 2.0,
-      "completion_per_million": 6.0
-    },
-    "description": "Qwen3.8 Max is the flagship model in Alibaba's Qwen3.8 series, the general-availability successor to the Qwen3.8 Max Preview. It is a multimodal reasoning model intended for complex reasoning, visual understanding,...",
-    "architecture": "text+image+video->text",
-    "top_provider": 131072
-  },
   "deepseek/deepseek-v4-flash-0731": {
     "name": "DeepSeek: DeepSeek V4 Flash 0731",
     "created": 1785478908,
     "created_date": "2026-07-31",
     "context_length": 1310720,
     "pricing": {
-      "prompt": "0.000000065",
-      "completion": "0.00000018",
-      "prompt_per_million": 0.065,
-      "completion_per_million": 0.18
+      "prompt": "0.00000004",
+      "completion": "0.00000008",
+      "prompt_per_million": 0.04,
+      "completion_per_million": 0.08
     },
     "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows....",
     "architecture": "text->text",
@@ -305,10 +305,10 @@
     "created_date": "2026-07-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000003",
-      "completion": "0.000015",
-      "prompt_per_million": 3.0,
-      "completion_per_million": 15.0
+      "prompt": "0.000002648138063",
+      "completion": "0.00001328272425",
+      "prompt_per_million": 2.6481380629999998,
+      "completion_per_million": 13.282724250000001
     },
     "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at...",
     "architecture": "text+image+video->text",
@@ -455,14 +455,14 @@
     "created_date": "2026-06-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000000966",
-      "completion": "0.000003036",
-      "prompt_per_million": 0.966,
-      "completion_per_million": 3.036
+      "prompt": "0.0000006",
+      "completion": "0.000002",
+      "prompt_per_million": 0.6,
+      "completion_per_million": 2.0
     },
     "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
     "architecture": "text->text",
-    "top_provider": 131072
+    "top_provider": 182476
   },
   "anthropic/claude-fable-5": {
     "name": "Anthropic: Claude Fable 5",
@@ -605,14 +605,14 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000000981708",
-      "completion": "0.000001963416",
-      "prompt_per_million": 0.981708,
-      "completion_per_million": 1.963416
+      "prompt": "0.0000016",
+      "completion": "0.0000032",
+      "prompt_per_million": 1.5999999999999999,
+      "completion_per_million": 3.1999999999999997
     },
     "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
     "architecture": "text->text",
-    "top_provider": 384000
+    "top_provider": 393216
   },
   "deepseek/deepseek-v4-flash": {
     "name": "DeepSeek: DeepSeek V4 Flash 0423",
@@ -620,10 +620,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000008778",
-      "completion": "0.00000017556",
-      "prompt_per_million": 0.08778,
-      "completion_per_million": 0.17556
+      "prompt": "0.00000006538",
+      "completion": "0.00000013076",
+      "prompt_per_million": 0.06538,
+      "completion_per_million": 0.13076
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
@@ -1228,6 +1228,21 @@
     "description": null,
     "architecture": "text+image+file+audio+video->text",
     "top_provider": 65536
+  },
+  "qwen/qwen3.8-max": {
+    "name": "Qwen: Qwen3.8 Max",
+    "created": 1785731612,
+    "created_date": "2026-08-02",
+    "context_length": 1000000,
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000006",
+      "prompt_per_million": 2.0,
+      "completion_per_million": 6.0
+    },
+    "description": "Qwen3.8 Max is the flagship model in Alibaba's Qwen3.8 series, the general-availability successor to the Qwen3.8 Max Preview. It is a multimodal reasoning model intended for complex reasoning, visual understanding,...",
+    "architecture": "text+image+video->text",
+    "top_provider": 131072
   },
   "x-ai/grok-4.1-fast": {
     "name": "xAI: Grok 4.1 Fast",
