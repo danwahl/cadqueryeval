@@ -1,4 +1,19 @@
 {
+  "x-ai/grok-4.7": {
+    "name": "SpaceXAI: Grok 4.7",
+    "created": 1790007541,
+    "created_date": "2026-09-21",
+    "context_length": 500000,
+    "pricing": {
+      "prompt": "0.0000016",
+      "completion": "0.0000048",
+      "prompt_per_million": 1.5999999999999999,
+      "completion_per_million": 4.8
+    },
+    "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
+    "architecture": "text+image+file->text",
+    "top_provider": 450000
+  },
   "deepseek/deepseek-v4.1-flash": {
     "name": "DeepSeek: DeepSeek V4.1 Flash",
     "created": 1789021285,
@@ -110,10 +125,10 @@
     "created_date": "2026-08-26",
     "context_length": 1310720,
     "pricing": {
-      "prompt": "0.00000015",
-      "completion": "0.0000005",
-      "prompt_per_million": 0.15,
-      "completion_per_million": 0.5
+      "prompt": "0.00000009",
+      "completion": "0.0000003",
+      "prompt_per_million": 0.09,
+      "completion_per_million": 0.3
     },
     "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
     "architecture": "text+image+video->text",
@@ -125,10 +140,10 @@
     "created_date": "2026-08-18",
     "context_length": 1310720,
     "pricing": {
-      "prompt": "0.000001092",
-      "completion": "0.000003432",
-      "prompt_per_million": 1.092,
-      "completion_per_million": 3.432
+      "prompt": "0.00000091",
+      "completion": "0.00000286",
+      "prompt_per_million": 0.9099999999999999,
+      "completion_per_million": 2.8600000000000003
     },
     "description": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves...",
     "architecture": "text->text",
@@ -160,7 +175,7 @@
       "prompt_per_million": 2.0,
       "completion_per_million": 6.0
     },
-    "description": "Grok 4.6 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM.",
+    "description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
     "architecture": "text+image+file->text",
     "top_provider": 450000
   },
@@ -170,14 +185,14 @@
     "created_date": "2026-08-11",
     "context_length": 262144,
     "pricing": {
-      "prompt": "0.00000008",
+      "prompt": "0.00000007",
       "completion": "0.0000002",
-      "prompt_per_million": 0.08,
+      "prompt_per_million": 0.07,
       "completion_per_million": 0.19999999999999998
     },
     "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
     "architecture": "text->text",
-    "top_provider": 131072
+    "top_provider": 235929
   },
   "upstage/solar-pro4": {
     "name": "Upstage: Solar Pro 4",
@@ -216,9 +231,9 @@
     "context_length": 1310720,
     "pricing": {
       "prompt": "0.00000004",
-      "completion": "0.00000008",
+      "completion": "0.00000016",
       "prompt_per_million": 0.04,
-      "completion_per_million": 0.08
+      "completion_per_million": 0.16
     },
     "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows....",
     "architecture": "text->text",
@@ -240,7 +255,7 @@
     "top_provider": 65536
   },
   "anthropic/claude-opus-5": {
-    "name": "Claude Opus 5",
+    "name": "Anthropic: Claude Opus 5",
     "created": 1784912544,
     "created_date": "2026-07-24",
     "context_length": 1000000,
@@ -305,10 +320,10 @@
     "created_date": "2026-07-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.000002648138063",
-      "completion": "0.00001328272425",
-      "prompt_per_million": 2.6481380629999998,
-      "completion_per_million": 13.282724250000001
+      "prompt": "0.0000017",
+      "completion": "0.0000085",
+      "prompt_per_million": 1.7,
+      "completion_per_million": 8.5
     },
     "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at...",
     "architecture": "text+image+video->text",
@@ -455,14 +470,14 @@
     "created_date": "2026-06-16",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.0000006",
-      "completion": "0.000002",
-      "prompt_per_million": 0.6,
-      "completion_per_million": 2.0
+      "prompt": "0.0000006496",
+      "completion": "0.0000020416",
+      "prompt_per_million": 0.6496,
+      "completion_per_million": 2.0416
     },
     "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
     "architecture": "text->text",
-    "top_provider": 182476
+    "top_provider": 131072
   },
   "anthropic/claude-fable-5": {
     "name": "Anthropic: Claude Fable 5",
@@ -605,14 +620,14 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.0000016",
-      "completion": "0.0000032",
-      "prompt_per_million": 1.5999999999999999,
-      "completion_per_million": 3.1999999999999997
+      "prompt": "0.000000936294",
+      "completion": "0.000001872588",
+      "prompt_per_million": 0.936294,
+      "completion_per_million": 1.872588
     },
     "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
     "architecture": "text->text",
-    "top_provider": 393216
+    "top_provider": 384000
   },
   "deepseek/deepseek-v4-flash": {
     "name": "DeepSeek: DeepSeek V4 Flash 0423",
@@ -620,10 +635,10 @@
     "created_date": "2026-04-23",
     "context_length": 1048576,
     "pricing": {
-      "prompt": "0.00000006538",
-      "completion": "0.00000013076",
-      "prompt_per_million": 0.06538,
-      "completion_per_million": 0.13076
+      "prompt": "0.00000005544",
+      "completion": "0.00000011088",
+      "prompt_per_million": 0.055439999999999996,
+      "completion_per_million": 0.11087999999999999
     },
     "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
     "architecture": "text->text",
@@ -1004,26 +1019,11 @@
     "architecture": "text+image+file+audio+video->text",
     "top_provider": 65536
   },
-  "anthropic/claude-opus-4": {
-    "name": "Anthropic: Claude Opus 4",
-    "created": 1747931245,
-    "created_date": "2025-05-22",
-    "context_length": 200000,
-    "pricing": {
-      "prompt": "0.000015",
-      "completion": "0.000075",
-      "prompt_per_million": 15.0,
-      "completion_per_million": 75.0
-    },
-    "description": "Claude Opus 4 is benchmarked as the world\u2019s best coding model, at time of release, bringing sustained performance on complex, long-running tasks and agent workflows. It sets new benchmarks in...",
-    "architecture": "text+image+file->text",
-    "top_provider": 32000
-  },
   "anthropic/claude-sonnet-4": {
     "name": "Anthropic: Claude Sonnet 4",
     "created": 1747930371,
     "created_date": "2025-05-22",
-    "context_length": 1000000,
+    "context_length": 200000,
     "pricing": {
       "prompt": "0.000003",
       "completion": "0.000015",
@@ -1198,6 +1198,21 @@
     "description": "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and...",
     "architecture": "text+image+file->text",
     "top_provider": 64000
+  },
+  "anthropic/claude-opus-4": {
+    "name": "Anthropic: Claude Opus 4",
+    "created": 1747931245,
+    "created_date": "2025-05-22",
+    "context_length": 200000,
+    "pricing": {
+      "prompt": "0.000015",
+      "completion": "0.000075",
+      "prompt_per_million": 15.0,
+      "completion_per_million": 75.0
+    },
+    "description": "Claude Opus 4 is benchmarked as the world\u2019s best coding model, at time of release, bringing sustained performance on complex, long-running tasks and agent workflows. It sets new benchmarks in...",
+    "architecture": "text+image+file->text",
+    "top_provider": 32000
   },
   "google/gemini-2.0-flash-001": {
     "name": "Google: Gemini 2.0 Flash",
