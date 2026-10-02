@@ -17,3 +17,4 @@ wheels/
 # Data and Artifacts
 logs/
 data/generated_stls/
+_site/
