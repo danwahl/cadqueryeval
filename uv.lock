@@ -303,7 +303,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "evalib", marker = "extra == 'dev'", git = "https://github.com/danwahl/evalib?tag=v0.2.0" },
+    { name = "evalib", marker = "extra == 'dev'", git = "https://github.com/danwahl/evalib?tag=v0.2.1" },
     { name = "inspect-ai", specifier = ">=0.3.158" },
     { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.0" },
     { name = "numpy", marker = "extra == 'scorer'", specifier = ">=1.26.0" },
@@ -577,7 +577,7 @@ wheels = [
 [[package]]
 name = "evalib"
 version = "0.1.0"
-source = { git = "https://github.com/danwahl/evalib?tag=v0.2.0#c43fca81258db7fbdc6a39c50adbddf7df8949e0" }
+source = { git = "https://github.com/danwahl/evalib?tag=v0.2.1#4c1a23edce1743ae7fe4be7b0a054373e6e3daeb" }
 dependencies = [
     { name = "jinja2" },
     { name = "markdown-it-py" },
