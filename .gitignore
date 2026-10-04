@@ -18,3 +18,4 @@ wheels/
 logs/
 data/generated_stls/
 _site/
+dataset/
